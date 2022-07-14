@@ -41,7 +41,7 @@ const MadeFor = () => {
           </svg>
         </div>
       </div>
-      <div className='relative w-full  h-[150px] sm:h-[500px] md:h-[794px]'>
+      <div className='relative w-[80%]  h-[150px] sm:h-[500px] md:h-[794px]'>
         <img
           src={image4.src}
           alt=''

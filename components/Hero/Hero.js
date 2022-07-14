@@ -27,11 +27,10 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className='justify-self-end mt-20 lg:mt-14'>
-          <div className='relative scale-75  md:scale-100'>
+        <div className='justify-self-center lg:justify-self-end mt-20 lg:mt-14   md:scale-100'>
+          <div className='relative '>
             <svg
-              width={495}
-              height={495}
+              className='w-[279.63px] h-[340px] sm:w-[350px] sm:h-[400px] md:w-[495px] md:h-[495px]'
               viewBox='0 0 495 495'
               fill='none'
               xmlns='http://www.w3.org/2000/svg'
