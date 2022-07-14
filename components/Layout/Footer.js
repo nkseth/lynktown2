@@ -93,19 +93,31 @@ const Footer = () => {
               </li>
             </ul>
             <div className='flex gap-5 items-center'>
-              <a href='http://www.facebook.com' target='_blank'>
+              <a
+                href='http://www.facebook.com'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <RiFacebookFill className='text-xl' />
               </a>
-              <a href='http://www.twitter.com' target='_blank'>
+              <a href='http://www.twitter.com' target='_blank' rel='noreferrer'>
                 <RiTwitterFill className='text-xl' />
               </a>
-              <a href='http://www.instagram.com' target='_blank'>
+              <a
+                href='http://www.instagram.com'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <RiInstagramFill className='text-xl' />
               </a>
-              <a href='http://www.linkedin.com' target='_blank'>
+              <a
+                href='http://www.linkedin.com'
+                target='_blank'
+                rel='noreferrer'
+              >
                 <ImLinkedin2 className='text-xl' />
               </a>
-              <a href='http://www.youtube.com' target='_blank'>
+              <a href='http://www.youtube.com' target='_blank' rel='noreferrer'>
                 <ImYoutube className='text-xl' />
               </a>
             </div>

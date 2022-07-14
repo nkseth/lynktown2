@@ -11,14 +11,14 @@ export const Email = () => (
       stroke='white'
       strokeWidth='1.4'
       strokeLinecap='round'
-      stroke-linejoin='round'
+      strokeLinejoin='round'
     />
     <path
       d='M18.3333 2.94954C18.3333 2.39701 18.1138 1.86711 17.7231 1.47641C17.3324 1.0857 16.8025 0.866211 16.25 0.866211H3.75C3.19747 0.866211 2.66756 1.0857 2.27686 1.47641C1.88616 1.86711 1.66667 2.39701 1.66667 2.94954L8.89583 7.46343C9.22694 7.67038 9.60954 7.7801 10 7.7801C10.3905 7.7801 10.7731 7.67038 11.1042 7.46343L18.3333 2.94954Z'
       stroke='white'
       strokeWidth='1.4'
       strokeLinecap='round'
-      stroke-linejoin='round'
+      strokeLinejoin='round'
     />
   </svg>
 );
@@ -36,7 +36,7 @@ export const Phone = () => (
       stroke='white'
       strokeWidth='1.4'
       strokeLinecap='round'
-      stroke-linejoin='round'
+      strokeLinejoin='round'
     />
   </svg>
 );
@@ -54,14 +54,14 @@ export const Location = () => (
       stroke='white'
       strokeWidth='1.4'
       strokeLinecap='round'
-      stroke-linejoin='round'
+      strokeLinejoin='round'
     />
     <path
       d='M4.56971 8.22677C4.56971 9.13656 4.93113 10.0091 5.57445 10.6524C6.21777 11.2957 7.0903 11.6571 8.00009 11.6571C8.90989 11.6571 9.78242 11.2957 10.4257 10.6524C11.0691 10.0091 11.4305 9.13656 11.4305 8.22677C11.4305 7.31697 11.0691 6.44444 10.4257 5.80112C9.78242 5.1578 8.90989 4.79639 8.00009 4.79639C7.0903 4.79639 6.21777 5.1578 5.57445 5.80112C4.93113 6.44444 4.56971 7.31697 4.56971 8.22677V8.22677Z'
       stroke='white'
       strokeWidth='1.4'
       strokeLinecap='round'
-      stroke-linejoin='round'
+      strokeLinejoin='round'
     />
   </svg>
 );
