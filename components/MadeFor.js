@@ -7,21 +7,21 @@ import image5 from '/public/assets/images/madefor/5.png';
 import image6 from '/public/assets/images/madefor/6.png';
 const MadeFor = () => {
   return (
-    <section className='min-h-screen container mx-auto gap-10 flex items-center  justify-center'>
-      <div className='relative w-full h-[794px]'>
+    <section className='h-[80vh] md:min-h-screen container mx-auto gap-10 flex flex-col md:flex-row md:justify-center items-center pt-20 md:pt-0'>
+      <div className='relative w-full h-full md:h-[794px] hidden md:block'>
         <img src={image1.src} alt='' className='absolute right-[5%] top-44' />
         <img src={image2.src} alt='' className='absolute left-0  top-64 z-10' />
         <img src={image3.src} alt='' className='absolute right-[5%] bottom-0' />
       </div>
       <div className='justify-center w-full text-center'>
-        <h1 className='text-[40px] text-primaryColor underline font-medium'>
+        <h1 className='text-[24px] md:text-[32px] lg:text-[40px] text-primaryColor underline font-medium'>
           Made For
         </h1>
-        <p className='text-[#757575] text-[40px] mt-8'>
+        <p className='text-[#757575]  text-[24px] md:text-[32px] leading-[46px]  md:leading-[56px] lg:text-[40px] mt-8'>
           creators game changers go-getters leaders different ones rebels
         </p>
         <div className='relative'>
-          <h4 className='text-[40px] text-primaryColor font-semibold'>
+          <h4 className='md:text-[32px] text-[24px]  lg:text-[40px] text-primaryColor font-semibold'>
             for you
           </h4>
           <svg
@@ -41,14 +41,22 @@ const MadeFor = () => {
           </svg>
         </div>
       </div>
-      <div className='relative w-full h-[794px]'>
-        <img src={image4.src} alt='' className='absolute left-[20%] top-40' />
+      <div className='relative w-full  h-[150px] sm:h-[500px] md:h-[794px]'>
+        <img
+          src={image4.src}
+          alt=''
+          className='absolute h-[156.76px] w-[157.38px] sm:w-[206.76px] sm:h-[250px] md:w-auto md:h-auto top-10 left-10 md:left-[20%] md:top-40 object-cover'
+        />
         <img
           src={image5.src}
           alt=''
-          className='absolute  right-[5%] top-72 z-10'
+          className='absolute h-[100.08px] w-[100.32px]  sm:w-[150px] sm:h-[150px] md:w-auto md:h-auto   md:right-[5%] top-20 sm:top-52 right-5 sm:right-0 md:top-72 z-10 object-cover'
         />
-        <img src={image6.src} alt='' className='absolute  left-[5%] bottom-0' />
+        <img
+          src={image6.src}
+          alt=''
+          className='absolute   h-[154.63px] w-[153.45px]  sm:w-[230px] sm:h-[250px] md:w-auto md:h-auto     bottom-[-150px] z-10 sm:bottom-0  left-[40%] md:left-[5%] md:bottom-0 object-cover'
+        />
       </div>
     </section>
   );
