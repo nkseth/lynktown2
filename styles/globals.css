@@ -1,16 +1,71 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--poppins);
+  overflow-x: hidden;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+button {
+  font-family: inherit !important;
 }
 
-* {
-  box-sizing: border-box;
+.community_main img {
+  background: linear-gradient(180deg, #6a5b40 0%, rgba(0, 0, 0, 0) 14.16%),
+    #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .community__img--3:hover::before,
+  .community__img--2:hover::before {
+    opacity: 0;
+  }
+  .community__img--3::before,
+  .community__img--2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #857250;
+    border-radius: inherit;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+  .community__img--2::before {
+    background-color: #6a5b40;
+  }
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: none !important;
+  /* border-top: 0.5px solid rgba(0, 0, 0, 0.24) !important; */
+  /* border-bottom: 0px solid rgba(0, 0, 0, 0.24) !important; */
+  border-radius: none !important;
+}
+.MuiPaper-elevation1:last-of-type {
+  border-bottom: 0.5px solid #cfd8dc !important;
+}
+
+.MuiAccordion-rounded:last-child {
+  border-radius: 0px !important;
+}
+.MuiAccordion-rounded:first-child {
+  border-radius: 0px !important;
+}
+
+.MuiAccordionSummary-content {
+  margin: 18px 0 !important;
+}
+.MuiAccordion-root.Mui-expanded {
+  margin: 0 !important;
 }
