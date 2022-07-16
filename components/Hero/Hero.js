@@ -7,7 +7,7 @@ import { Chart, Facebook, Instagram, WhatsApp } from './Icons';
 
 const Hero = () => {
   return (
-    <section className='lg:h-[655px] py-16 lg:py-4   bg-primaryColor text-white relative'>
+    <section className='lg:h-[655px]  py-16 lg:py-4   bg-primaryColor text-white relative'>
       <div className='container mx-auto grid lg:grid-cols-2 items-center h-full px-4'>
         <div>
           <h1 className='md:text-4xl text-3xl lg:text-5xl xl:text-[56px]  text-center md:text-left leading-normal lg:leading-[70.2px] font-medium lg:max-w-[585px]'>

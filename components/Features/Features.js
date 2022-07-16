@@ -1,0 +1,175 @@
+import * as React from 'react';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import SwipeableViews from 'react-swipeable-views';
+import { useTheme } from '@mui/material/styles';
+import { Typography } from '@mui/material';
+import { AnimatePresence, motion } from 'framer-motion';
+
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import Measurement from './Measurement';
+import Alteration from './Alteration';
+import Shipping from './Shipping';
+import Payment from './Payment';
+import SingleLink from './SingleLink';
+import ManageOrders from './ManageOrders';
+import Exchange from './Exchange';
+
+const Features = () => {
+  const theme = useTheme();
+
+  const tabs = [
+    { name: 'Single link', value: 'singleLink' },
+    { name: 'Measurement', value: 'measurement' },
+    { name: 'Shipping', value: 'shippingAndTracking' },
+    { name: 'Payment', value: 'payment' },
+    { name: 'Manage orders', value: 'manageOrders' },
+    { name: 'Exchange', value: 'exchange' },
+    { name: 'Alterations', value: 'alterations' },
+  ];
+
+  const tabContainer = React.useRef(null);
+  console.log(
+    '🚀 ~ file: Features.js ~ line 37 ~ Features ~ tabContainer',
+    tabContainer
+  );
+
+  const [currentTab, setCurrentTab] = React.useState('singleLink');
+
+  const [tabWidth, setTabWidth] = React.useState(0);
+  console.log(
+    '🚀 ~ file: Features.js ~ line 45 ~ Features ~ tabWidth',
+    tabWidth
+  );
+  const [tabLeft, setTabLeft] = React.useState(0);
+  console.log('🚀 ~ file: Features.js ~ line 46 ~ Features ~ tabLeft', tabLeft);
+
+  React.useEffect(() => {
+    const tab = tabContainer.current.querySelector(`.${currentTab}-activeTab`);
+
+    setTabLeft(tab.offsetLeft);
+    setTabWidth(tab.offsetWidth);
+
+    // profileTabs.map((tab, i) => {
+    //   if (tab.to === pathname) {
+    //     setTabIdx(i);
+    //   }
+    // });
+  }, [currentTab]);
+
+  return (
+    <section className='container mx-auto my-24    '>
+      <div className='w-full  py-10  md:border-primaryColor md:border  '>
+        <h1 className='text-2xl md:text-4xl lg:text-[40px] text-primaryColor text-center font-medium'>
+          Our user friendly <span className='underline'>features</span>{' '}
+        </h1>
+        <header className='py-10 mx-auto text-center Swiper--header'>
+          <Swiper
+            slidesPerView={2}
+            ref={tabContainer}
+            breakpoints={{
+              450: {
+                slidesPerView: 3.2,
+              },
+              700: {
+                slidesPerView: 4,
+              },
+              1000: {
+                slidesPerView: 5.2,
+              },
+              1380: {
+                slidesPerView: 6.5,
+              },
+
+              1540: {
+                slidesPerView: 8,
+              },
+            }}
+            className='px-5 md:px-10'
+          >
+            {tabs.map(tab => {
+              return (
+                <SwiperSlide>
+                  <button
+                    className={`${
+                      currentTab === tab.value
+                        ? 'border-b-4 border-primaryColor'
+                        : ''
+                    } ${tab.value}-activeTab  py-4 `}
+                    onClick={() => setCurrentTab(tab.value)}
+                  >
+                    {tab.name}
+                  </button>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </header>
+        {/* <div className='max-w-[80%] mx-auto'>{component}</div> */}
+        <div className='lg:max-w-[80%] px-4 mx-auto relative lg:h-[560px] '>
+          <SingleLink currentTab={currentTab} />
+          <Measurement currentTab={currentTab} />
+          <Alteration currentTab={currentTab} />
+          <Shipping currentTab={currentTab} />
+          <Payment currentTab={currentTab} />
+          <ManageOrders currentTab={currentTab} />
+          <Exchange currentTab={currentTab} />
+
+          {/* 
+            {currentTab === 'alterations' && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                <Alteration />
+              </motion.div>
+            )} */}
+          {/* <AnimatePresence>
+            {currentTab === 'shippingAndTracking' && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ y: 0 }}
+              >
+                <Shipping />
+              </motion.div>
+            )}
+          </AnimatePresence> */}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Features;
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role='tabpanel'
+      hidden={value !== index}
+      id={`full-width-tabpanel-${index}`}
+      aria-labelledby={`full-width-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}

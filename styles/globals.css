@@ -69,3 +69,18 @@ button {
 .MuiAccordion-root.Mui-expanded {
   margin: 0 !important;
 }
+
+@media screen and (min-width: 1380px) {
+  .Swiper--header .swiper .swiper-wrapper {
+    justify-content: center !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background: #b4b4b4 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #6a5b40 !important;
+}
