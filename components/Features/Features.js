@@ -2,7 +2,6 @@ import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import SwipeableViews from 'react-swipeable-views';
 import { useTheme } from '@mui/material/styles';
 import { Typography } from '@mui/material';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -99,7 +98,7 @@ const Features = () => {
           >
             {tabs.map(tab => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={tab.value}>
                   <button
                     className={`${
                       currentTab === tab.value

@@ -5,12 +5,14 @@ import Features from '../components/Features/Features';
 import Hero from '../components/Hero/Hero';
 import Layout from '../components/Layout/Layout';
 import MadeFor from '../components/MadeFor';
+import SellingSteps from '../components/SellingSteps/SellingSteps';
 import Testimonial from '../components/Testimonial/Testimonial';
 
 export default function Home() {
   return (
     <Layout>
       <Hero />
+      <SellingSteps />
       <Community />
       <Features />
       <Testimonial />

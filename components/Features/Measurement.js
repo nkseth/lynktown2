@@ -1,7 +1,6 @@
 import { Button } from '@mui/material';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-import Animated from 'react-mount-animation';
 import MeasurementImg from '/public/assets/images/features/measurement.png';
 
 const Measurement = ({ currentTab }) => {
