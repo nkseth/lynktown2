@@ -8,9 +8,6 @@ const Shipping = ({ currentTab }) => {
     <AnimatePresence>
       {currentTab === 'shippingAndTracking' && (
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
           key='shippingAndTracking'
           className='grid lg:grid-cols-[65%_35%] gap-10 items-center h-full lg:h-[560px] '
         >

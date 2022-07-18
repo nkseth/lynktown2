@@ -37,34 +37,7 @@ const Features = () => {
     { name: 'Alterations', value: 'alterations' },
   ];
 
-  const tabContainer = React.useRef(null);
-  console.log(
-    '🚀 ~ file: Features.js ~ line 37 ~ Features ~ tabContainer',
-    tabContainer
-  );
-
   const [currentTab, setCurrentTab] = React.useState('singleLink');
-
-  const [tabWidth, setTabWidth] = React.useState(0);
-  console.log(
-    '🚀 ~ file: Features.js ~ line 45 ~ Features ~ tabWidth',
-    tabWidth
-  );
-  const [tabLeft, setTabLeft] = React.useState(0);
-  console.log('🚀 ~ file: Features.js ~ line 46 ~ Features ~ tabLeft', tabLeft);
-
-  React.useEffect(() => {
-    const tab = tabContainer.current.querySelector(`.${currentTab}-activeTab`);
-
-    setTabLeft(tab.offsetLeft);
-    setTabWidth(tab.offsetWidth);
-
-    // profileTabs.map((tab, i) => {
-    //   if (tab.to === pathname) {
-    //     setTabIdx(i);
-    //   }
-    // });
-  }, [currentTab]);
 
   return (
     <section className='container mx-auto my-24    '>
@@ -75,7 +48,6 @@ const Features = () => {
         <header className='py-10 mx-auto text-center Swiper--header'>
           <Swiper
             slidesPerView={2}
-            ref={tabContainer}
             breakpoints={{
               450: {
                 slidesPerView: 3.2,
