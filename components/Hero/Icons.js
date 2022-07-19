@@ -1,8 +1,7 @@
 export const Chart = () => {
   return (
     <svg
-      width={252}
-      height={240}
+      className='w-[120px] h-[120px] sm:w-[252px] sm:h-[240px]'
       viewBox='0 0 252 240'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

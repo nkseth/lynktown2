@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className='bg-primaryColor h-24'>
+    <header className='bg-primaryColor pt-14 pb-4 sm:pt-0 sm:pb-0 sm:h-24'>
       <div className='container mx-auto flex h-full items-center justify-center md:justify-between'>
         <div>
           <svg
@@ -51,7 +51,7 @@ const Header = () => {
         </div>
         <div className='hidden md:block'>
           <Button
-            className='bg-white text-primaryColor p-2 w-[173px] hover:bg-white rounded-xl'
+            className=' !bg-white !text-primaryColor !p-2 !w-[173px] !hover:bg-white !rounded-xl'
             startIcon={
               <svg
                 width='30'

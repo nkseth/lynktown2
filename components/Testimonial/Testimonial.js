@@ -61,7 +61,7 @@ const Testimonial = () => {
           slidesPerView={1}
           onSlideChange={() => console.log('slide change')}
           onSwiper={swiper => console.log(swiper)}
-          className='pb-14 '
+          className='!pb-14 '
         >
           {carosuelPoint.map(item => {
             const { img, review, stars, id, name, role } = item;

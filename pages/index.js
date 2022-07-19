@@ -5,6 +5,7 @@ import Features from '../components/Features/Features';
 import Hero from '../components/Hero/Hero';
 import Layout from '../components/Layout/Layout';
 import MadeFor from '../components/MadeFor';
+import ManageBusiness from '../components/ManageBusiness/ManageBusiness';
 import SellingSteps from '../components/SellingSteps/SellingSteps';
 import Testimonial from '../components/Testimonial/Testimonial';
 
@@ -13,6 +14,7 @@ export default function Home() {
     <Layout>
       <Hero />
       <SellingSteps />
+      <ManageBusiness />
       <Community />
       <Features />
       <Testimonial />
