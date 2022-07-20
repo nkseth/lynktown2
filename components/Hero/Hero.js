@@ -15,8 +15,8 @@ const Hero = () => {
             of social Buying & Selling
           </h1>
           <p className='my-3 sm:my-8 mx-auto text-center md:text-left'>
-            A platform designed from the voices of 5000+ <br /> fashion
-            designers
+            A platform designed from the voices of 5000+{' '}
+            <br className='hidden md:block' /> fashion designers
           </p>
           <div className='flex gap-5  flex-wrap justify-center md:justify-start'>
             <button className='w-[133.88px] h-[40px] sm:w-auto sm:h-auto'>
