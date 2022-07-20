@@ -67,17 +67,15 @@ const ManageBusiness = () => {
   });
 
   useEffect(() => {
-    const progress = document.querySelector('.progressLine');
+    const progress = document.querySelector('#progressBarManage');
     let value = 0;
     if (clicked[2]) {
       value = 1;
     }
     if (clicked[3]) {
-      value = 2;
+      value = 2.7;
     }
-    if (clicked[4]) {
-      value = 3.7;
-    }
+
     progress.style.height = value * 120 + 'px';
 
     setHeight(height => height * 120);
