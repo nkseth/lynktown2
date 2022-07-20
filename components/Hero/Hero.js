@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button } from '@mui/material';
 import google from '/public/assets/images/google.png';
 import apple from '/public/assets/images/apple.png';
 import person from '/public/assets/images/person.png';
 import { Chart, Facebook, Instagram, WhatsApp } from './Icons';
+import { Button } from '@mui/material';
 
 const Hero = () => {
   return (
@@ -106,26 +106,28 @@ const Hero = () => {
           />
         </svg>
       </div>
-      <Button
-        className='md:hidden absolute bottom-5 right-5 !bg-white !text-primaryColor h-[40px] text-sm !w-[150px] !hover:bg-white '
-        startIcon={
-          <svg
-            width='20'
-            height='20'
-            viewBox='0 0 30 30'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <circle cx='15' cy='15' r='15' fill='#6A5B40' />
-            <path
-              d='M20.4238 14.134C21.0905 14.5189 21.0905 15.4811 20.4238 15.866L13.0392 20.1295C12.3725 20.5144 11.5392 20.0333 11.5392 19.2635L11.5392 10.7365C11.5392 9.96667 12.3725 9.48555 13.0392 9.87045L20.4238 14.134Z'
-              fill='white'
-            />
-          </svg>
-        }
-      >
-        Watch Demo
-      </Button>
+      <div className='md:hidden absolute bottom-5 right-5'>
+        <Button
+          className=' !bg-white !text-primaryColor h-[40px] text-sm !w-[150px] !hover:bg-white '
+          startIcon={
+            <svg
+              width='20'
+              height='20'
+              viewBox='0 0 30 30'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <circle cx='15' cy='15' r='15' fill='#6A5B40' />
+              <path
+                d='M20.4238 14.134C21.0905 14.5189 21.0905 15.4811 20.4238 15.866L13.0392 20.1295C12.3725 20.5144 11.5392 20.0333 11.5392 19.2635L11.5392 10.7365C11.5392 9.96667 12.3725 9.48555 13.0392 9.87045L20.4238 14.134Z'
+                fill='white'
+              />
+            </svg>
+          }
+        >
+          Watch Demo
+        </Button>
+      </div>
     </section>
   );
 };

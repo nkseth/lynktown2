@@ -59,8 +59,6 @@ const Testimonial = () => {
           //   disableOnInteraction: false,
           // }}
           slidesPerView={1}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={swiper => console.log(swiper)}
           className='!pb-14 '
         >
           {carosuelPoint.map(item => {

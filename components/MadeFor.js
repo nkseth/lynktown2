@@ -7,7 +7,7 @@ import image5 from '/public/assets/images/madefor/5.png';
 import image6 from '/public/assets/images/madefor/6.png';
 const MadeFor = () => {
   return (
-    <section className='h-[80vh] md:min-h-screen container mx-auto gap-10 flex flex-col md:flex-row md:justify-center items-center pt-20 md:pt-0'>
+    <section className='h-[80vh] md:py-40 container mx-auto gap-10 flex flex-col md:flex-row md:justify-center items-center pb-44 pt-10 sm:py-20 md:pt-0'>
       <div className='relative w-full h-full md:h-[794px] hidden md:block'>
         <img src={image1.src} alt='' className='absolute right-[5%] top-44' />
         <img src={image2.src} alt='' className='absolute left-0  top-64 z-10' />
@@ -25,7 +25,23 @@ const MadeFor = () => {
             for you
           </h4>
           <svg
-            className='absolute left-2/4 top-[-8px] translate-x-[-52%]'
+            className='absolute left-2/4 top-[-8px] translate-x-[-52%]  md:hidden'
+            width='118'
+            height='43'
+            viewBox='0 0 118 43'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <path
+              d='M115.316 31.7226C108.217 32.2435 101.531 35.3264 94.5467 36.5889C90.6233 37.2982 86.6265 37.2238 82.6676 37.6161C77.9545 38.0832 73.2381 38.7544 68.537 39.3382C59.7301 40.4318 51.0259 41.0382 42.1613 41.3792C34.014 41.6927 26.3014 40.1781 18.3464 38.5322C14.0181 37.6367 9.15999 36.3386 5.59669 33.568C3.27646 31.7639 2.37869 30.0263 1.60489 27.2025C0.69168 23.8699 1.77662 22.235 4.32773 20.1605C9.83557 15.6817 16.1141 11.9876 22.974 10.0351C38.7331 5.54981 54.9683 3.01638 71.3291 2.28289C77.5669 2.00324 84.3015 1.13502 90.5205 1.92467C96.4737 2.68056 101.774 5.79328 106.616 9.17398C109.766 11.3741 112.902 14.7666 114.627 18.2357C115.316 19.6204 116.296 21.2535 115.917 22.8806C115.482 24.7489 113.675 26.3655 112.49 27.764C109.894 30.8266 107.226 33.7083 104.294 36.442C102.442 38.169 100.502 40.7002 98.073 41.6229'
+              stroke='#6A5B40'
+              strokeWidth='2'
+              strokeLinecap='round'
+            />
+          </svg>
+
+          <svg
+            className='absolute left-2/4 top-[-8px] translate-x-[-52%] hidden md:block'
             width='211'
             height='78'
             viewBox='0 0 211 78'
@@ -41,16 +57,16 @@ const MadeFor = () => {
           </svg>
         </div>
       </div>
-      <div className='relative w-[80%]  h-[150px] sm:h-[500px] md:h-[794px]'>
+      <div className='relative w-full md:w-[80%]  h-[150px] sm:h-[500px] md:h-[794px]'>
         <img
           src={image4.src}
           alt=''
-          className='absolute h-[156.76px] w-[157.38px] sm:w-[206.76px] sm:h-[250px] md:w-auto md:h-auto top-10 left-10 md:left-[20%] md:top-40 object-cover'
+          className='absolute h-[156.76px] w-[157.38px] sm:w-[206.76px] sm:h-[250px] md:w-auto md:h-auto top-10 left-[2%] md:left-[20%] md:top-40 object-cover'
         />
         <img
           src={image5.src}
           alt=''
-          className='absolute h-[100.08px] w-[100.32px]  sm:w-[150px] sm:h-[150px] md:w-auto md:h-auto   md:right-[5%] top-20 sm:top-52 right-5 sm:right-0 md:top-72 z-10 object-cover'
+          className='absolute h-[100.08px] w-[100.32px]  sm:w-[150px] sm:h-[150px] md:w-auto md:h-auto   md:right-[5%] top-12 sm:top-52 right-[5%] sm:right-0 md:top-72 z-10 object-cover'
         />
         <img
           src={image6.src}

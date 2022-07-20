@@ -35,7 +35,6 @@ const autoPlay = 5000;
 const SLIDE_LENGTH = 3;
 
 function move(idx) {
-  console.log('🚀 ~ file: SellingStepMobile.js ~ line 46 ~ move ~ idx', idx);
   var elem = document.getElementById(`progressBar--${idx}`);
 
   if (idx === 0) {
@@ -79,7 +78,6 @@ const ManageBusinessMobile = () => {
           //   clickable: true,
           // }}
 
-          onChange={e => console.log('first', e)}
           pagination={{
             clickable: true,
           }}

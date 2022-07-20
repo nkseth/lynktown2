@@ -85,6 +85,8 @@ const SellingSteps = () => {
       value = 3.7;
     }
     progress.style.height = value * 120 + 'px';
+
+    setHeight(height => height * 120);
   }, [clicked]);
 
   const variantsHeight = {
@@ -104,19 +106,58 @@ const SellingSteps = () => {
     },
   };
 
+  const [height, setHeight] = useState(0);
+
+  const [manualClick, setManualClick] = useState(true);
+
+  useEffect(() => {
+    if (manualClick || largeScreen) return;
+    const progressBar = document.querySelector('#progressBar');
+    var id = setInterval(frame, 80);
+    // let height = 0;
+
+    function frame() {
+      if (manualClick || !progressBar) return;
+
+      if (height >= 440) {
+        clearInterval(id);
+      } else {
+        height++;
+        progressBar.style.height = height + 'px';
+        if (height === 110) {
+          setClicked(prev => ({
+            ...prev,
+            2: true,
+          }));
+        }
+        if (height === 260) {
+          setClicked(prev => ({
+            ...prev,
+            3: true,
+          }));
+        }
+        if (height === 360) {
+          setClicked(prev => ({
+            ...prev,
+            4: true,
+          }));
+        }
+      }
+    }
+  }, [manualClick, largeScreen]);
+
   return (
     <>
       {largeScreen ? (
         <SellingStepMobile />
       ) : (
-        <div className='wrapper relative '>
+        <div className='wrapper relative py-32'>
           <div className='selling-steps xl:container  mx-auto h-full   '>
-            <div className='grid lg:grid-cols-2 h-screen item-container items-center justify-center  justify-items-center  '>
+            <div className='grid lg:grid-cols-2 item-container items-center justify-center  justify-items-center  '>
               <div>
                 <div className='relative'>
                   <svg
-                    width='474'
-                    height='474'
+                    className='w-[400px] h-[400px] xl:w-[474px] xl:h-[474px]'
                     viewBox='0 0 474 474'
                     fill='none'
                     xmlns='http://www.w3.org/2000/svg'
@@ -139,7 +180,7 @@ const SellingSteps = () => {
                             opacity: 0,
                             scale: 0,
                           }}
-                          transition={{ type: 'spring', bounce: 0.45 }}
+                          transition={{ type: 'spring', bounce: 0.35 }}
                           src={step1.src}
                           alt=''
                           className='h-full w-full  step_img--1 origin-bottom'
@@ -163,7 +204,7 @@ const SellingSteps = () => {
                             opacity: 0,
                             scale: 0,
                           }}
-                          transition={{ type: 'spring', bounce: 0.45 }}
+                          transition={{ type: 'spring', bounce: 0.35 }}
                           src={step2.src}
                           alt=''
                           className='h-full w-full  step_img--2 origin-bottom'
@@ -187,7 +228,7 @@ const SellingSteps = () => {
                             opacity: 0,
                             scale: 0,
                           }}
-                          transition={{ type: 'spring', bounce: 0.45 }}
+                          transition={{ type: 'spring', bounce: 0.35 }}
                           src={step3.src}
                           alt=''
                           className='h-full w-full  step_img--1 origin-bottom'
@@ -211,7 +252,7 @@ const SellingSteps = () => {
                             opacity: 0,
                             scale: 0,
                           }}
-                          transition={{ type: 'spring', bounce: 0.45 }}
+                          transition={{ type: 'spring', bounce: 0.35 }}
                           src={step4.src}
                           alt=''
                           className='h-full w-full  step_img--1 origin-bottom'
@@ -232,7 +273,10 @@ const SellingSteps = () => {
                       height: `calc(100% - 8px)`,
                     }}
                   ></div>
-                  <div className='w-[2px] progressLine   bg-[#6A5B40] absolute left-3 z-[-1]'></div>
+                  <div
+                    id='progressBar'
+                    className='w-[2px] progressLine transition-all   bg-[#6A5B40] absolute left-3 z-[-1]'
+                  ></div>
 
                   {steps.map(step => {
                     const { id, description, title } = step;
@@ -256,6 +300,7 @@ const SellingSteps = () => {
 
                           if (!clicked[id - 1]) return;
                           if (clicked[id + 1]) return;
+                          setManualClick(true);
 
                           setClicked(prev => ({
                             ...prev,
