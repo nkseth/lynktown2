@@ -84,7 +84,7 @@ const SellingSteps = () => {
     if (clicked[4]) {
       value = 3.7;
     }
-    progress.style.height = value * 120 + 'px';
+    if (progress) progress.style.height = value * 120 + 'px';
 
     setHeight(height => height * 120);
   }, [clicked]);
@@ -110,41 +110,41 @@ const SellingSteps = () => {
 
   const [manualClick, setManualClick] = useState(true);
 
-  useEffect(() => {
-    if (manualClick || largeScreen) return;
-    const progressBar = document.querySelector('#progressBar');
-    var id = setInterval(frame, 80);
-    // let height = 0;
+  // useEffect(() => {
+  //   if (manualClick || largeScreen) return;
+  //   const progressBar = document.querySelector('#progressBar');
+  //   var id = setInterval(frame, 80);
+  //   // let height = 0;
 
-    function frame() {
-      if (manualClick || !progressBar) return;
+  //   function frame() {
+  //     if (manualClick || !progressBar) return;
 
-      if (height >= 440) {
-        clearInterval(id);
-      } else {
-        height++;
-        progressBar.style.height = height + 'px';
-        if (height === 110) {
-          setClicked(prev => ({
-            ...prev,
-            2: true,
-          }));
-        }
-        if (height === 260) {
-          setClicked(prev => ({
-            ...prev,
-            3: true,
-          }));
-        }
-        if (height === 360) {
-          setClicked(prev => ({
-            ...prev,
-            4: true,
-          }));
-        }
-      }
-    }
-  }, [manualClick, largeScreen]);
+  //     if (height >= 440) {
+  //       clearInterval(id);
+  //     } else {
+  //       height++;
+  //       progressBar.style.height = height + 'px';
+  //       if (height === 110) {
+  //         setClicked(prev => ({
+  //           ...prev,
+  //           2: true,
+  //         }));
+  //       }
+  //       if (height === 260) {
+  //         setClicked(prev => ({
+  //           ...prev,
+  //           3: true,
+  //         }));
+  //       }
+  //       if (height === 360) {
+  //         setClicked(prev => ({
+  //           ...prev,
+  //           4: true,
+  //         }));
+  //       }
+  //     }
+  //   }
+  // }, [manualClick, largeScreen]);
 
   return (
     <>

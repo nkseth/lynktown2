@@ -76,7 +76,7 @@ const ManageBusiness = () => {
       value = 2.7;
     }
 
-    progress.style.height = value * 120 + 'px';
+    if (progress) progress.style.height = value * 120 + 'px';
 
     setHeight(height => height * 120);
   }, [clicked]);
@@ -102,35 +102,35 @@ const ManageBusiness = () => {
 
   const [manualClick, setManualClick] = useState(true);
 
-  useEffect(() => {
-    if (manualClick || largeScreen) return;
-    const progressBar = document.querySelector('#progressBarManage');
-    var id = setInterval(frame, 80);
-    // let height = 0;
+  // useEffect(() => {
+  //   if (manualClick || largeScreen) return;
+  //   const progressBar = document.querySelector('#progressBarManage');
+  //   var id = setInterval(frame, 80);
+  //   // let height = 0;
 
-    function frame() {
-      if (manualClick || !progressBar) return;
+  //   function frame() {
+  //     if (manualClick || !progressBar) return;
 
-      if (height >= 320) {
-        clearInterval(id);
-      } else {
-        height++;
-        progressBar.style.height = height + 'px';
-        if (height === 110) {
-          setClicked(prev => ({
-            ...prev,
-            2: true,
-          }));
-        }
-        if (height === 260) {
-          setClicked(prev => ({
-            ...prev,
-            3: true,
-          }));
-        }
-      }
-    }
-  }, [largeScreen]);
+  //     if (height >= 320) {
+  //       clearInterval(id);
+  //     } else {
+  //       height++;
+  //       progressBar.style.height = height + 'px';
+  //       if (height === 110) {
+  //         setClicked(prev => ({
+  //           ...prev,
+  //           2: true,
+  //         }));
+  //       }
+  //       if (height === 260) {
+  //         setClicked(prev => ({
+  //           ...prev,
+  //           3: true,
+  //         }));
+  //       }
+  //     }
+  //   }
+  // }, [largeScreen]);
 
   return (
     <>
