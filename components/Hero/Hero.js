@@ -30,7 +30,8 @@ const Hero = () => {
         <div className='justify-self-center lg:justify-self-end mt-20 lg:mt-14   md:scale-100'>
           <div className='relative '>
             <svg
-              className='w-[279.63px] h-[340px] sm:w-[350px] sm:h-[400px] md:w-[495px] md:h-[495px]'
+              // className='w-[279.63px] h-[340px] sm:w-[350px] sm:h-[400px] md:w-[495px] md:h-[495px]'
+              className='w-full h-full sm:w-[350px] sm:h-[400px] md:w-[495px] md:h-[495px]'
               viewBox='0 0 495 495'
               fill='none'
               xmlns='http://www.w3.org/2000/svg'
@@ -39,10 +40,10 @@ const Hero = () => {
               <circle cx={247.5} cy={247.5} r={195.611} fill='#9D8E73' />
               <circle cx={247.499} cy={247.5} r={150.312} fill='#6A5B40' />
             </svg>
-            <div className='absolute    top-[6px] sm:top-[-15px] md:top-[-86px] lg:top-[-35px] left-[-10px]'>
+            <div className='absolute    top-[-58px] sm:top-[-15px] md:top-[-86px] lg:top-[-35px] left-[-10px]'>
               <img src={person.src} alt='' className='h-full' />
             </div>
-            <div className='absolute top-[45%] right-[-50px]'>
+            <div className='absolute top-[45%] right-[-5%]'>
               <Chart />
             </div>
             <div className='absolute top-[15%] right-0'>
