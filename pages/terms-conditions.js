@@ -104,7 +104,7 @@ const TermsNConditionPoints = [
     point: (
       <>
         LynkTown reserves the right to vary the terms and conditions of the
-        offer by the company’s discretion.
+        offer by the company&apos;s discretion.
       </>
     ),
   },
@@ -131,14 +131,14 @@ const TermsNCondition = () => {
                 These are the terms and conditions which apply to any
                 competition, prize draw, or promotion that our partners and we
                 may run, whether on our websites or theirs, social media
-                platforms, and more. In these terms and conditions, 'we', ' us',
-                'our' and 'Promoter ' all mean LynkTown team. Our registered
+                platforms, and more. In these terms and conditions,
+                &apos;we&apos;, &apos; us&apos;, &apos;our&apos; and
+                &apos;Promoter &apos; all mean LynkTown team. Our registered
                 address is:
               </h4>
             </div>
-            <div className='mt-6 '>
+            <div className='mt-6'>
               <h1 className='underline text-lg font-bold '>
-                {' '}
                 Following are the terms and conditions you should know:
               </h1>
               <ul className='list-disc ml-7'>
