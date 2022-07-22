@@ -11,12 +11,12 @@ const Hero = () => {
       <div className='container mx-auto grid lg:grid-cols-2 items-center h-full px-4'>
         <div>
           <h1 className='md:text-4xl text-3xl lg:text-5xl xl:text-[56px]  text-center md:text-left leading-normal lg:leading-[70.2px] font-medium lg:max-w-[585px]'>
-            A <span className='underline font-semibold'>Revolutionary</span> way
-            of social Buying & Selling
+            Grow your business & sell products with ease
           </h1>
           <p className='my-3 sm:my-8 mx-auto text-center md:text-left'>
-            A platform designed from the voices of 5000+{' '}
-            <br className='hidden md:block' /> fashion designers
+            Lynk Town is trusted by 5000+ fashion designers, artists &{' '}
+            <br className='hidden md:block' />
+            business owners.
           </p>
           <div className='flex gap-5  flex-wrap justify-center md:justify-start'>
             <button className='w-[133.88px] h-[40px] sm:w-auto sm:h-auto'>
