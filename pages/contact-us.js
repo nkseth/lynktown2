@@ -64,12 +64,17 @@ const ContactUs = () => {
       {loading && <Loading />}
       <div className=' pb-24 relative '>
         <header className='bg-primaryColor h-[311.7px] py-[60px]'>
-          <h1 className='font-dmSerif text-[56px]  text-white text-center'>
+          <h1 className='font-dmSerif text-3xl md:text-5xl lg:text-[56px] text-white text-center'>
             Contact Us
           </h1>
         </header>
         <div className='px-4 mt-[-80px]'>
-          <div className='w-full bg-white rounded-[10px]  max-w-[950px] mx-auto shadow-md py-8 px-2 md:p-8 lg:p-10 xl:p-16'>
+          <div
+            className='w-full bg-white rounded-[10px]  max-w-[950px] mx-auto py-8 px-2 md:p-8 lg:p-10 xl:p-16'
+            style={{
+              boxShadow: `2px 10px 28px rgba(75, 0, 129, 0.12)`,
+            }}
+          >
             <h1 className='border-b border-primaryColor text-2xl text-primaryColor w-fit text-center mx-auto'>
               Get In Touch
             </h1>
