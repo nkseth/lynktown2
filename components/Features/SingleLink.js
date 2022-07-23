@@ -8,7 +8,7 @@ const SingleLink = ({ currentTab }) => {
       {currentTab === 'singleLink' && (
         <motion.div
           key='singleLink'
-          className='grid lg:grid-cols-[65%_35%] gap-10 items-center h-full lg:h-[560px] '
+          className='grid lg:grid-cols-[65%_35%] gap-28 lg:gap-10 items-center h-full lg:h-[560px] '
         >
           <div className='order-2 lg:order-[-1]'>
             <motion.h1

@@ -25,10 +25,10 @@ const Community = () => {
               </div>
             </div>
           </div>
-          <div className='z-10 absolute bottom-0 text-lg  lg:text-2xl xl:text-[28px] p-6 md:p-12 opacity-70 text-white w-full'>
+          <div className='z-10 absolute bottom-0 text-xl lg:text-2xl xl:text-[32px] !leading-[40px] p-6 md:p-12 opacity-70 text-white w-full'>
             <h4>
-              Building a community to nurture collaboration and creativity among
-              the creators
+              Be a part of a creative business community to collaborate and grow
+              your business
             </h4>
           </div>
         </div>
@@ -50,8 +50,11 @@ const Community = () => {
               </div>
             </div>
           </div>
-          <div className='z-10 absolute bottom-0 lg:text-2xl xl:text-[28px] p-6 md:p-12 opacity-70 text-white w-full'>
-            <h4>Helping you with daily tips on branding and marketing</h4>
+          <div className='z-10 absolute bottom-0 text-xl lg:text-2xl xl:text-[32px] !leading-[40px] p-6 md:p-12 opacity-70 text-white w-full'>
+            <h4>
+              Get real world insights and daily tips to help you with your
+              branding and marketing
+            </h4>
           </div>
         </div>
         <div
@@ -72,10 +75,10 @@ const Community = () => {
               </div>
             </div>
           </div>
-          <div className='z-10 absolute bottom-0 lg:text-2xl xl:text-[28px] p-6 md:p-12 opacity-70 text-white w-full'>
+          <div className='z-10 absolute bottom-0 text-xl lg:text-2xl xl:text-[32px] !leading-[40px] p-6 md:p-12 opacity-70 text-white w-full'>
             <h4>
-              We are a trust worthy platform that is being trusted by 1000s of
-              sellers from all over the world
+              Build your business with a platform trusted by 1000s of sellers
+              from all over the world
             </h4>
           </div>
         </div>

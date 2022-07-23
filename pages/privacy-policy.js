@@ -168,10 +168,9 @@ const TermsNCondition = () => {
                 customers.
                 <br />
                 <br />
-                The website is a property _____________________________________,
-                an Indian company registered under the Companies Act, 2013
-                having its registered office at
-                _____________________________________.
+                The website is a property ___, an Indian company registered
+                under the Companies Act, 2013 having its registered office at
+                ___.
               </h4>
             </div>
             <div className='mt-6 '>
@@ -204,14 +203,13 @@ const TermsNCondition = () => {
               <h1 className=' text-lg font-bold '>Cookie Policy</h1>
               <h4 className='mt-4'>
                 A cookie is a small text file that we place on your mobile
-                device to enable various features of __________________________.
-                ‘Cookies are used to store user preferences and to track user
-                trends, so as to enhance your interactive experience and
-                sincerely improve our services. You can change your cookie
-                settings to accept or not accept cookies in your browser
-                settings. If you do accept a ‘cookie’, you hereby agree to our
-                use of any personal information collected by us using that
-                cookie.
+                device to enable various features of ____. ‘Cookies are used to
+                store user preferences and to track user trends, so as to
+                enhance your interactive experience and sincerely improve our
+                services. You can change your cookie settings to accept or not
+                accept cookies in your browser settings. If you do accept a
+                ‘cookie’, you hereby agree to our use of any personal
+                information collected by us using that cookie.
               </h4>
             </div>
             <div className='mt-6 '>
@@ -393,11 +391,11 @@ const TermsNCondition = () => {
                   reorganization, amalgamation, restructuring of business. We
                   have developed this policy to protect your personal/financial
                   information and keep it confidential. By visiting our website
-                  ____________, you are accepting and consenting to the
-                  practices described in this privacy policies. The following
-                  Privacy Policy and Cookie Policy outlines the information we
-                  may process and how we may use that information to better
-                  serve you while using our website _______________________.
+                  ___, you are accepting and consenting to the practices
+                  described in this privacy policies. The following Privacy
+                  Policy and Cookie Policy outlines the information we may
+                  process and how we may use that information to better serve
+                  you while using our website ____.
                 </h4>
               </div>
             </div>
@@ -409,10 +407,10 @@ const TermsNCondition = () => {
                 </h1>
                 <h4>
                   To stop receiving our promotional emails, please email
-                  unsubscribe at ______________. It may take about ten days to
-                  process your request. Even if you opt-out of getting marketing
-                  messages, we will still be sending you transactional messages
-                  through email and SMS about your purchases.
+                  unsubscribe at ___. It may take about ten days to process your
+                  request. Even if you opt-out of getting marketing messages, we
+                  will still be sending you transactional messages through email
+                  and SMS about your purchases.
                 </h4>
               </div>
             </div>
@@ -443,7 +441,7 @@ const TermsNCondition = () => {
               <h1 className=' text-lg font-bold '>UPDATES TO THIS POLICY</h1>
 
               <h4 className='my-4'>
-                This Privacy Policy was last updated on __________. From time to
+                This Privacy Policy was last updated on ______. From time to
                 time we may change our privacy practices. We will notify you of
                 any material changes to this policy as required by law. We will
                 also post an updated copy on our website. Please check our site

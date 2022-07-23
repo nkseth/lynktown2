@@ -8,7 +8,7 @@ const Alteration = ({ currentTab }) => {
       {currentTab === 'alterations' && (
         <motion.div
           key='alterations'
-          className='grid lg:grid-cols-[65%_35%] gap-10 items-center h-full lg:h-[560px] '
+          className='grid lg:grid-cols-[65%_35%] gap-28 items-center h-full lg:h-[560px] '
         >
           <div className='order-2 lg:order-[-1]'>
             <motion.h1

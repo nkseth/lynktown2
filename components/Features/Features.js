@@ -26,6 +26,11 @@ import Exchange from './Exchange';
 
 const Features = () => {
   const theme = useTheme();
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   const tabs = [
     { name: 'Single link', value: 'singleLink' },
@@ -41,11 +46,49 @@ const Features = () => {
 
   return (
     <section className='container mx-auto my-24    '>
-      <div className='w-full  py-10  md:border-primaryColor md:border  '>
+      <div className='w-full  py-10  rounded-[38px] md:border-primaryColor md:border  '>
         <h1 className='text-2xl md:text-4xl lg:text-[40px] text-primaryColor text-center font-medium'>
           Our user friendly <span className='underline'>features</span>{' '}
         </h1>
-        <header className='py-10 mx-auto text-center Swiper--header'>
+        <header className='py-10 mb-10 mx-auto flex justify-center text-center Swiper--header'>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            variant='scrollable'
+            scrollButtons
+            allowScrollButtonsMobile
+            aria-label='scrollable force tabs example'
+            sx={{
+              // '& .MuiTabs-scrollButtons': {
+              //   backgroundColor: '#6A5B40',
+              //   borderRadius: '50%',
+              //   width: '35px',
+              //   height: '35px',
+              // },
+              '& .MuiTabs-scroller': {
+                '& .MuiTabs-flexContainer': {
+                  gap: '1.2rem',
+                  '& button.Mui-selected': {
+                    color: '#6A5B40',
+                  },
+                },
+                '& .MuiTabs-indicator': {
+                  backgroundColor: '#6A5B40',
+                },
+              },
+            }}
+          >
+            {tabs.map(tab => {
+              return (
+                <Tab
+                  label={tab.name}
+                  onClick={() => setCurrentTab(tab.value)}
+                />
+              );
+            })}
+          </Tabs>
+        </header>
+        {/* <header className='py-10 mx-auto text-center Swiper--header'>
           <Swiper
             slidesPerView={2}
             breakpoints={{
@@ -85,7 +128,7 @@ const Features = () => {
               );
             })}
           </Swiper>
-        </header>
+        </header> */}
         {/* <div className='max-w-[80%] mx-auto'>{component}</div> */}
         <div className='lg:max-w-[80%] px-4 mx-auto relative lg:h-[560px] '>
           <SingleLink currentTab={currentTab} />

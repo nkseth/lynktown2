@@ -7,18 +7,18 @@ import image5 from '/public/assets/images/madefor/5.png';
 import image6 from '/public/assets/images/madefor/6.png';
 const MadeFor = () => {
   return (
-    <section className='h-[80vh] md:py-40 container mx-auto gap-10 flex flex-col md:flex-row md:justify-center items-center pb-44 pt-10 sm:py-20 md:pt-0'>
-      <div className='relative w-full h-full md:h-[794px] hidden md:block'>
+    <section className='h-[60vh] sm:h-[80vh] md:h-full md:py-40 container mx-auto gap-10 flex flex-col md:flex-row md:justify-center items-center pb-44 pt-10 sm:py-20 md:pt-0'>
+      <div className='relative flex-1 w-full h-full md:h-[794px] hidden md:block'>
         <img src={image1.src} alt='' className='absolute right-[5%] top-44' />
         <img src={image2.src} alt='' className='absolute left-0  top-64 z-10' />
         <img src={image3.src} alt='' className='absolute right-[5%] bottom-0' />
       </div>
-      <div className='justify-center w-full text-center'>
+      <div className='justify-center flex-1 w-full text-center'>
         <h1 className='text-[24px] md:text-[32px] lg:text-[40px] text-primaryColor underline font-medium'>
           Made For
         </h1>
         <p className='text-[#757575]  text-[24px] md:text-[32px] leading-[46px]  md:leading-[56px] lg:text-[40px] mt-8'>
-          creators game changers go-getters leaders different ones rebels
+          Business owners Professionals Creatives Leaders Artists
         </p>
         <div className='relative'>
           <h4 className='md:text-[32px] text-[24px]  lg:text-[40px] text-primaryColor font-semibold'>
@@ -57,7 +57,7 @@ const MadeFor = () => {
           </svg>
         </div>
       </div>
-      <div className='relative w-full md:w-[80%]  h-[150px] sm:h-[500px] md:h-[794px]'>
+      <div className='relative w-full  md:w-[80%]  flex-1 h-[450px] sm:h-[500px] md:h-[794px]'>
         <img
           src={image4.src}
           alt=''

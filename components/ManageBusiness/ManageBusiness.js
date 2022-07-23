@@ -41,19 +41,19 @@ const ManageBusiness = () => {
   const steps = [
     {
       id: 1,
-      title: 'Customer’s request the order from bio ',
+      title: 'Create multiple product links',
       description:
         ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
     },
     {
       id: 2,
-      title: 'You have to accept the order request',
+      title: 'Manage orders with ease',
       description:
         ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
     },
     {
       id: 3,
-      title: 'You have to accept the order request',
+      title: 'Ship & track all your orders at one place',
       description:
         ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
     },
@@ -73,7 +73,7 @@ const ManageBusiness = () => {
       value = 1;
     }
     if (clicked[3]) {
-      value = 2.7;
+      value = 2.4;
     }
 
     if (progress) progress.style.height = value * 120 + 'px';
@@ -83,10 +83,10 @@ const ManageBusiness = () => {
 
   const variantsHeight = {
     show: {
-      height: '100px',
+      height: '88px',
     },
     hide: {
-      height: '28px',
+      height: '36px',
     },
   };
   const variantsText = {
@@ -137,19 +137,18 @@ const ManageBusiness = () => {
       {largeScreen ? (
         <ManageBusinessMobile />
       ) : (
-        <div className='wrapper relative py-32  px-4'>
+        <div className='wrapper relative py-48  px-4'>
           <div className='selling-steps xl:container  mx-auto h-full   '>
             <div className='flex lg:grid-cols-2  item-container items-center justify-center  justify-items-center  '>
               <div className='flex-[1.5] xl:flex-1'>
                 <h1 className='text-[40px] text-primaryColor'>
-                  Manage your online <br />
-                  buisness at your finger tips
+                  Manage your business at <br /> your finger tips
                 </h1>
-                <div className='relative flex flex-col gap-4 h-full mt-4'>
+                <div className='relative  flex flex-col gap-4 h-full mt-10'>
                   <div
                     className='w-[2px]  h-full bg-[#D9D9D9] absolute left-3 z-[-1]'
                     style={{
-                      height: `calc(100% - 8px)`,
+                      height: `calc(100% - 35px)`,
                     }}
                   ></div>
                   <div
@@ -191,8 +190,8 @@ const ManageBusiness = () => {
                           <Tick fill={clicked[id] && true} />
                         </div>
                         <div>
-                          <h1 className='text-2xl opacity-80'>{title}</h1>
-                          <motion.p
+                          <h1 className='text-xl opacity-80'>{title}</h1>
+                          {/* <motion.p
                             variants={variantsText}
                             animate={clicked[id] ? 'show' : 'hide'}
                             // className={`my-2 text-[#757575]  ${
@@ -204,7 +203,7 @@ const ManageBusiness = () => {
                             // }}
                           >
                             {description}
-                          </motion.p>
+                          </motion.p> */}
                         </div>
                       </motion.div>
                     );

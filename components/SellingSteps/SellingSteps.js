@@ -91,10 +91,10 @@ const SellingSteps = () => {
 
   const variantsHeight = {
     show: {
-      height: '100px',
+      height: '88px',
     },
     hide: {
-      height: '28px',
+      height: '36px',
     },
   };
   const variantsText = {
@@ -108,7 +108,7 @@ const SellingSteps = () => {
 
   const [height, setHeight] = useState(0);
 
-  const [manualClick, setManualClick] = useState(true);
+  const [manualClick, setManualClick] = useState(false);
 
   // useEffect(() => {
   //   if (manualClick || largeScreen) return;
@@ -151,7 +151,7 @@ const SellingSteps = () => {
       {largeScreen ? (
         <SellingStepMobile />
       ) : (
-        <div className='wrapper relative py-32'>
+        <div className='wrapper relative py-48 px-4'>
           <div className='selling-steps xl:container  mx-auto h-full   '>
             <div className='grid lg:grid-cols-2 item-container items-center justify-center  justify-items-center  '>
               <div>
@@ -264,13 +264,13 @@ const SellingSteps = () => {
               </div>
               <div className='justify-self-start'>
                 <h1 className='text-[40px] text-primaryColor'>
-                  Sell your product in 4 <br /> simple steps
+                  Start selling in 4 steps
                 </h1>
-                <div className='relative flex flex-col gap-4 h-full mt-4'>
+                <div className='relative flex flex-col gap-4 h-full mt-10'>
                   <div
                     className='w-[2px]  h-full bg-[#D9D9D9] absolute left-3 z-[-1]'
                     style={{
-                      height: `calc(100% - 8px)`,
+                      height: `calc(100% - 28px)`,
                     }}
                   ></div>
                   <div
@@ -313,8 +313,8 @@ const SellingSteps = () => {
                           <Tick fill={clicked[id] && true} />
                         </div>
                         <div>
-                          <h1 className='text-2xl opacity-80'>{title}</h1>
-                          <motion.p
+                          <h1 className='text-xl opacity-80'>{title}</h1>
+                          {/* <motion.p
                             variants={variantsText}
                             animate={clicked[id] ? 'show' : 'hide'}
                             // className={`my-2 text-[#757575]  ${
@@ -326,7 +326,7 @@ const SellingSteps = () => {
                             // }}
                           >
                             {description}
-                          </motion.p>
+                          </motion.p> */}
                         </div>
                       </motion.div>
                     );
