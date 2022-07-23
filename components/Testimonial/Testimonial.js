@@ -75,6 +75,7 @@ const Testimonial = () => {
                   <div className='flex justify-center my-8 gap-3'>
                     {Array.from({ length: stars }).map((star, idx) => (
                       <svg
+                        key={idx}
                         width='19'
                         height='18'
                         viewBox='0 0 19 18'

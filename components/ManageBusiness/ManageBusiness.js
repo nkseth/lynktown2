@@ -185,7 +185,6 @@ const ManageBusiness = () => {
                             [id]: !prev[id],
                           }));
                         }}
-                        key={id}
                       >
                         <div>
                           <Tick fill={clicked[id] && true} />
