@@ -81,6 +81,7 @@ const Features = () => {
             {tabs.map(tab => {
               return (
                 <Tab
+                  key={tab.name}
                   label={tab.name}
                   onClick={() => setCurrentTab(tab.value)}
                 />

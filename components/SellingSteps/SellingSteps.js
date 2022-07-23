@@ -282,6 +282,7 @@ const SellingSteps = () => {
                     const { id, description, title } = step;
                     return (
                       <motion.div
+                        key={id}
                         variants={variantsHeight}
                         animate={clicked[id] ? 'show' : 'hide'}
                         // className={`flex gap-5 step_${id}  ${
