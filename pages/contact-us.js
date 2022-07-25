@@ -41,12 +41,11 @@ const ContactUs = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        'https://formsubmit.co/ajax/d1a399084dfbb7b44f37cb990f33e273',
+        'https://formsubmit.co/ajax/lynktown@gmail.com',
         {
           ...values,
         }
       );
-      console.log('🚀 ~ file: Contact.js ~ line 19 ~ Contact ~ res', res);
 
       if (res.data.success === 'true') {
         setLoading(false);

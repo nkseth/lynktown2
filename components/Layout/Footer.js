@@ -97,16 +97,17 @@ const Footer = () => {
             <ul className='flex flex-col gap-4 my-6'>
               <li className='flex items-center gap-3'>
                 <HiOutlineMail className='text-xl' />
-                <a href='mailto:contact@company.com'>contact@company.com</a>
+                <a href='mailto:lynktown@gmail.com'>lynktown@gmail.com</a>
               </li>
               <li className='flex items-center gap-3'>
                 <HiOutlinePhone className='text-xl' />
-                <p>(414) 687 - 5892</p>
+                <p>+91 96635 24882</p>
               </li>
               <li className='flex items-start gap-3'>
-                <HiOutlineLocationMarker className='text-xl' />
+                <HiOutlineLocationMarker className='!text-xl min-w-[20px]' />
                 <p>
-                  794 Mcallister St <br /> San Francisco, 94102
+                  224, Bannerghatta Main Rd, near Arekere Main Road, Omkar
+                  Nagar, Bilekahalli, Bengaluru, Karnataka 560076
                 </p>
               </li>
             </ul>
@@ -164,12 +165,12 @@ const Footer = () => {
             className='underline flex items-center gap-3'
             onClick={() =>
               window.open(
-                'https://api.whatsapp.com/send?phone=919999999999',
+                'https://api.whatsapp.com/send?phone=919663524882',
                 '_blank'
               )
             }
           >
-            For support{' '}
+            For support
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 48 48'
@@ -224,7 +225,7 @@ const Footer = () => {
               className='underline flex items-center gap-3'
               onClick={() =>
                 window.open(
-                  'https://api.whatsapp.com/send?phone=919999999999',
+                  'https://api.whatsapp.com/send?phone=919663524882',
                   '_blank'
                 )
               }
