@@ -66,12 +66,10 @@ const Footer = () => {
                 About Lynk Town
               </h1>
               <p className='text-center md:text-left py-4 text-base text-[#3B3B3B] leading-[30px]'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                dignissim consectetur penatibus ac amet aenean. Ornare nec
-                volutpat porttitor convallis aliquet leo nullam diam. Lacus
-                morbi sed lacus molestie arcu consectetur faucibus purus. Porta
-                ipsum nisi, ut ullamcorper vel ut mauris vitae. Convallis amet,
-                sspendisse
+                We are a digital platform helping to build an ecosystem that
+                seamlessly connects creatives, business owners, supplires,
+                customers, trading partners, to collaborate, grow businesses and
+                give the customers the best possible experience.
               </p>
             </div>
           </div>

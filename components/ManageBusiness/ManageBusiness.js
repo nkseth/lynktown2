@@ -100,37 +100,41 @@ const ManageBusiness = () => {
 
   const [height, setHeight] = useState(0);
 
-  const [manualClick, setManualClick] = useState(true);
+  const [manualClick, setManualClick] = useState(false);
 
-  // useEffect(() => {
-  //   if (manualClick || largeScreen) return;
-  //   const progressBar = document.querySelector('#progressBarManage');
-  //   var id = setInterval(frame, 80);
-  //   // let height = 0;
+  const [running, setRunning] = useState(false);
 
-  //   function frame() {
-  //     if (manualClick || !progressBar) return;
+  useEffect(() => {
+    if (manualClick || largeScreen) return;
+    const progressBar = document.querySelector('#progressBarManage');
+    const id = setInterval(frame, 80);
+    // let height = 0;
 
-  //     if (height >= 320) {
-  //       clearInterval(id);
-  //     } else {
-  //       height++;
-  //       progressBar.style.height = height + 'px';
-  //       if (height === 110) {
-  //         setClicked(prev => ({
-  //           ...prev,
-  //           2: true,
-  //         }));
-  //       }
-  //       if (height === 260) {
-  //         setClicked(prev => ({
-  //           ...prev,
-  //           3: true,
-  //         }));
-  //       }
-  //     }
-  //   }
-  // }, [largeScreen]);
+    function frame() {
+      if (manualClick || !progressBar) return;
+
+      if (height >= 265) {
+        clearInterval(id);
+        setRunning(false);
+      } else {
+        setRunning(true);
+        height++;
+        progressBar.style.height = height + 'px';
+        if (height === 110) {
+          setClicked(prev => ({
+            ...prev,
+            2: true,
+          }));
+        }
+        if (height === 220) {
+          setClicked(prev => ({
+            ...prev,
+            3: true,
+          }));
+        }
+      }
+    }
+  }, [manualClick, largeScreen]);
 
   return (
     <>
@@ -139,9 +143,9 @@ const ManageBusiness = () => {
       ) : (
         <div className='wrapper relative py-48  px-4'>
           <div className='selling-steps xl:container  mx-auto h-full   '>
-            <div className='flex lg:grid-cols-2  item-container items-center justify-center  justify-items-center  '>
-              <div className='flex-[1.5] xl:flex-1'>
-                <h1 className='text-[40px] text-primaryColor'>
+            <div className='flex lg:grid-cols-2  item-container items-center justify-center  '>
+              <div className='flex-[1.5] xl:flex-1  ml-20 '>
+                <h1 className='text-[40px] text-primaryColor font-medium mb-24  '>
                   Manage your business at <br /> your finger tips
                 </h1>
                 <div className='relative  flex flex-col gap-4 h-full mt-10'>
@@ -166,20 +170,22 @@ const ManageBusiness = () => {
                         // className={`flex gap-5 step_${id}  ${
                         //   id !== 1 ? 'h-[28px]' : 'h-[140px]'
                         // } transition-all`}
-                        className={`flex gap-5 step_${id} `}
+                        className={`flex gap-5 step_${id} !text-right `}
                         style={{
                           // height: clicked[id] ? '100%' : '20px',
                           cursor:
-                            clicked[id - 1] && !clicked[id + 1]
+                            clicked[id - 1] && !clicked[id + 1] && !running
                               ? 'pointer'
                               : '',
                         }}
                         onClick={e => {
                           if (id === 1) return;
+                          if (running) return;
 
                           if (!clicked[id - 1]) return;
                           if (clicked[id + 1]) return;
 
+                          setManualClick(true);
                           setClicked(prev => ({
                             ...prev,
                             [id]: !prev[id],
@@ -210,7 +216,7 @@ const ManageBusiness = () => {
                   })}
                 </div>
               </div>
-              <div className='flex-1 justify-end xl:justify-center flex '>
+              <div className='flex-1 ml-[-50px] justify-end xl:justify-center flex '>
                 <div className='relative'>
                   <svg
                     className='w-[400px] h-[400px] xl:w-[474px] xl:h-[474px]'

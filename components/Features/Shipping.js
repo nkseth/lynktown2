@@ -25,8 +25,8 @@ const Shipping = ({ currentTab }) => {
               exit={{ opacity: 0 }}
               className='my-10 leading-[28.61px]'
             >
-              Customers can &quot;access to every pin codes in India and few
-              parts of the world at the price.&quot;
+              Get your orders shipped to your customers with the help of our
+              vendors who ship throughout India.
             </motion.p>
             <div className='flex justify-center md:justify-start'>
               <button className='bg-primaryColor rounded-[12px] max-w-[212px] h-[45px] w-full md:h-[61px] text-white'>

@@ -40,8 +40,12 @@ const Hero = () => {
               <circle cx={247.5} cy={247.5} r={195.611} fill='#9D8E73' />
               <circle cx={247.499} cy={247.5} r={150.312} fill='#6A5B40' />
             </svg>
-            <div className='absolute    top-[-58px] sm:top-[-15px] md:top-[-86px] lg:top-[-35px] left-[-10px]'>
-              <img src={person.src} alt='' className='h-full' />
+            <div className='!absolute    !top-[-40px] sm:!top-[-15px] md:!top-[-86px] lg:!top-[-35px] !left-[-10px]'>
+              <img
+                src={person.src}
+                alt=''
+                className='sm:!h-full sm:w-auto  h-[340px] '
+              />
             </div>
             <div className='absolute top-[45%] right-[-5%]'>
               <Chart />
@@ -109,12 +113,13 @@ const Hero = () => {
       </div>
       <div className='md:hidden absolute bottom-5 right-5'>
         <Button
-          className=' !bg-white !text-primaryColor h-[40px] text-sm !w-[150px] !hover:bg-white '
+          className=' !bg-white !text-primaryColor text-[7.36px] h-[23px] w-[88.58px] sm:text-sm sm:!h-[40px] text-sm sm:!w-[150px] !hover:bg-white '
           startIcon={
             <svg
               width='20'
               height='20'
               viewBox='0 0 30 30'
+              className='w-[13.8px] h-[13.8px] sm:w-[20px] sm:h-[20px]'
               fill='none'
               xmlns='http://www.w3.org/2000/svg'
             >

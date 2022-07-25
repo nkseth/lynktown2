@@ -17,7 +17,7 @@ const Payment = ({ currentTab }) => {
               exit={{ opacity: 0 }}
               className='text-3xl text-[#333]'
             >
-              Choose a payment type you like
+              Get paid safer & faster
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -25,7 +25,8 @@ const Payment = ({ currentTab }) => {
               exit={{ opacity: 0 }}
               className='my-10 leading-[28.61px]'
             >
-              Choose payment methods that best suits you and your business.
+              We use Escrow payment which allows safe payment and easy money
+              transfer to your bank.
             </motion.p>
             <div className='flex justify-center md:justify-start'>
               <button className='bg-primaryColor rounded-[12px] max-w-[212px] h-[45px] w-full md:h-[61px] text-white'>

@@ -88,7 +88,7 @@ export const Chart = () => {
 };
 
 export const Instagram = () => (
-  <div className='w-[55px] h-[55px] md:w-[75px] md:h-[75px] grid place-items-center shadow-lg bg-white rounded-full '>
+  <div className='w-[55px] h-[55px] md:w-[75px] md:h-[75px] grid place-items-center shadow-xl bg-white rounded-full '>
     <svg
       className='w-7 h-7 md:w-[43px] md:h-[43px]'
       viewBox='0 0 43 43'

@@ -48,7 +48,7 @@ const Features = () => {
     <section className='container mx-auto my-24    '>
       <div className='w-full  py-10  rounded-[38px] md:border-primaryColor md:border  '>
         <h1 className='text-2xl md:text-4xl lg:text-[40px] text-primaryColor text-center font-medium'>
-          Our user friendly <span className='underline'>features</span>{' '}
+          Our intuitive features
         </h1>
         <header className='py-10 mb-10 mx-auto flex justify-center text-center Swiper--header'>
           <Tabs
@@ -68,6 +68,12 @@ const Features = () => {
               '& .MuiTabs-scroller': {
                 '& .MuiTabs-flexContainer': {
                   gap: '1.2rem',
+                  '& button': {
+                    fontSize: '16px',
+                    fontWeight: '500',
+                    color: '#3B3B3B',
+                    textTransform: 'capitalize',
+                  },
                   '& button.Mui-selected': {
                     color: '#6A5B40',
                   },
@@ -131,7 +137,7 @@ const Features = () => {
           </Swiper>
         </header> */}
         {/* <div className='max-w-[80%] mx-auto'>{component}</div> */}
-        <div className='lg:max-w-[80%] px-4 mx-auto relative lg:h-[560px] '>
+        <div className='lg:max-w-[80%] px-4 mx-auto relative lg:h-[560px]  '>
           <SingleLink currentTab={currentTab} />
           <Measurement currentTab={currentTab} />
           <Alteration currentTab={currentTab} />

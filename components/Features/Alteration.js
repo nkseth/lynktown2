@@ -25,8 +25,8 @@ const Alteration = ({ currentTab }) => {
               exit={{ opacity: 0 }}
               className='my-10 leading-[28.61px]'
             >
-              Customers upload all the measurements online via app so you can
-              get to work without a hitch.
+              Accepting alteration request helps your customers get better
+              experience.
             </motion.p>
             <div className='flex justify-center md:justify-start'>
               <button className='bg-primaryColor rounded-[12px] max-w-[212px] h-[45px] w-full md:h-[61px] text-white'>

@@ -24,8 +24,11 @@ const infoWeCollect = [
     id: 3,
     point: (
       <>
-        We collect the following information from you when you use or signup on
-        our website: Name, Address, Mail ID, Phone Number, IP Address
+        When you visit our Site, some information is automatically collected.
+        This may include information such as the Operating Systems (OS) running
+        on your device, Internet Protocol (IP) address, access times, browser
+        type, and language, and the website you visited before our Site. We also
+        collect information about how you use Our products or services.
       </>
     ),
   },

@@ -53,7 +53,7 @@ const SellingSteps = () => {
     },
     {
       id: 3,
-      title: 'Share on social media',
+      title: 'Share link on social media',
       description:
         ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
     },
@@ -79,10 +79,10 @@ const SellingSteps = () => {
       value = 1;
     }
     if (clicked[3]) {
-      value = 2;
+      value = 1.9;
     }
     if (clicked[4]) {
-      value = 3.7;
+      value = 3.3;
     }
     if (progress) progress.style.height = value * 120 + 'px';
 
@@ -109,42 +109,45 @@ const SellingSteps = () => {
   const [height, setHeight] = useState(0);
 
   const [manualClick, setManualClick] = useState(false);
+  const [running, setRunning] = useState(false);
 
-  // useEffect(() => {
-  //   if (manualClick || largeScreen) return;
-  //   const progressBar = document.querySelector('#progressBar');
-  //   var id = setInterval(frame, 80);
-  //   // let height = 0;
+  useEffect(() => {
+    if (manualClick || largeScreen) return setRunning(false);
+    const progressBar = document.querySelector('#progressBar');
+    var id = setInterval(frame, 80);
+    // let height = 0;
 
-  //   function frame() {
-  //     if (manualClick || !progressBar) return;
+    function frame() {
+      if (manualClick || !progressBar) return setRunning(false);
+      if (height >= 370) {
+        setRunning(false);
+        clearInterval(id);
+      } else {
+        height++;
+        setRunning(true);
 
-  //     if (height >= 440) {
-  //       clearInterval(id);
-  //     } else {
-  //       height++;
-  //       progressBar.style.height = height + 'px';
-  //       if (height === 110) {
-  //         setClicked(prev => ({
-  //           ...prev,
-  //           2: true,
-  //         }));
-  //       }
-  //       if (height === 260) {
-  //         setClicked(prev => ({
-  //           ...prev,
-  //           3: true,
-  //         }));
-  //       }
-  //       if (height === 360) {
-  //         setClicked(prev => ({
-  //           ...prev,
-  //           4: true,
-  //         }));
-  //       }
-  //     }
-  //   }
-  // }, [manualClick, largeScreen]);
+        progressBar.style.height = height + 'px';
+        if (height === 110) {
+          setClicked(prev => ({
+            ...prev,
+            2: true,
+          }));
+        }
+        if (height === 215) {
+          setClicked(prev => ({
+            ...prev,
+            3: true,
+          }));
+        }
+        if (height === 315) {
+          setClicked(prev => ({
+            ...prev,
+            4: true,
+          }));
+        }
+      }
+    }
+  }, [manualClick, largeScreen]);
 
   return (
     <>
@@ -263,7 +266,7 @@ const SellingSteps = () => {
                 </div>
               </div>
               <div className='justify-self-start'>
-                <h1 className='text-[40px] text-primaryColor'>
+                <h1 className='text-[40px] text-primaryColor font-medium mb-24  '>
                   Start selling in 4 steps
                 </h1>
                 <div className='relative flex flex-col gap-4 h-full mt-10'>
@@ -292,12 +295,13 @@ const SellingSteps = () => {
                         style={{
                           // height: clicked[id] ? '100%' : '20px',
                           cursor:
-                            clicked[id - 1] && !clicked[id + 1]
+                            clicked[id - 1] && !clicked[id + 1] && !running
                               ? 'pointer'
                               : '',
                         }}
                         onClick={e => {
                           if (id === 1) return;
+                          if (running) return;
 
                           if (!clicked[id - 1]) return;
                           if (clicked[id + 1]) return;

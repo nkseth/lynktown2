@@ -7,7 +7,7 @@ import image5 from '/public/assets/images/madefor/5.png';
 import image6 from '/public/assets/images/madefor/6.png';
 const MadeFor = () => {
   return (
-    <section className='h-[60vh] sm:h-[80vh] md:h-full md:py-40 container mx-auto gap-10 flex flex-col md:flex-row md:justify-center items-center pb-44 pt-10 sm:py-20 md:pt-0'>
+    <section className='min-h-[70vh] sm:h-[80vh] md:h-full md:py-40 container mx-auto gap-10 flex flex-col md:flex-row md:justify-center items-center pb-44 pt-10 sm:py-20 md:pt-0'>
       <div className='relative flex-1 w-full h-full md:h-[794px] hidden md:block'>
         <img src={image1.src} alt='' className='absolute right-[5%] top-44' />
         <img src={image2.src} alt='' className='absolute left-0  top-64 z-10' />
@@ -57,21 +57,21 @@ const MadeFor = () => {
           </svg>
         </div>
       </div>
-      <div className='relative w-full  md:w-[80%]  flex-1 h-[450px] sm:h-[500px] md:h-[794px]'>
+      <div className='relative w-full  md:w-[80%]  pb-36 lg:pb-0  flex-1 h-[450px] sm:h-[500px] md:h-[794px]'>
         <img
           src={image4.src}
           alt=''
-          className='absolute h-[156.76px] w-[157.38px] sm:w-[206.76px] sm:h-[250px] md:w-auto md:h-auto top-10 left-[2%] md:left-[20%] md:top-40 object-cover'
+          className='absolute h-[156.76px] w-[157.38px] sm:w-[206.76px] sm:h-[250px] md:w-auto md:h-auto top-10 left-[2%] sm:left-[5%] sm:top-[-50px] md:left-[20%] md:top-40 object-cover'
         />
         <img
           src={image5.src}
           alt=''
-          className='absolute h-[100.08px] w-[100.32px]  sm:w-[150px] sm:h-[150px] md:w-auto md:h-auto   md:right-[5%] top-12 sm:top-52 right-[5%] sm:right-0 md:top-72 z-10 object-cover'
+          className='absolute h-[100.08px] w-[100.32px]  sm:w-[150px] sm:h-[150px] md:w-auto md:h-auto   md:right-[5%] top-12 sm:right-0 sm:top-[-50px]  right-[5%]  md:top-72 z-10 object-cover'
         />
         <img
           src={image6.src}
           alt=''
-          className='absolute   h-[154.63px] w-[153.45px]  sm:w-[230px] sm:h-[250px] md:w-auto md:h-auto     bottom-[-150px] z-10 sm:bottom-0  left-[40%] md:left-[5%] md:bottom-0 object-cover'
+          className='absolute   h-[154.63px] w-[153.45px]  sm:w-[230px] sm:h-[250px] md:w-auto md:h-auto     bottom-[-150px]  z-10 sm:bottom-0  left-[40%] md:left-[5%] md:bottom-0 object-cover'
         />
       </div>
     </section>
