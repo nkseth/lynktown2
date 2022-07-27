@@ -6,7 +6,7 @@ import step2 from '/public/assets/images/manageBusiness/2.png';
 import step3 from '/public/assets/images/manageBusiness/3.png';
 import Tick from './Tick';
 import { useMediaQuery } from '@mui/material';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, useInView } from 'framer-motion';
 import ManageBusinessMobile from './ManageBusinessMobile';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -104,10 +104,16 @@ const ManageBusiness = () => {
 
   const [running, setRunning] = useState(false);
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    margin: '-200px 0px',
+    once: true,
+  });
+
   useEffect(() => {
-    if (manualClick || largeScreen) return;
+    if (manualClick || largeScreen || !isInView) return setRunning(false);
     const progressBar = document.querySelector('#progressBarManage');
-    const id = setInterval(frame, 80);
+    const id = setInterval(frame, 60);
     // let height = 0;
 
     function frame() {
@@ -134,14 +140,14 @@ const ManageBusiness = () => {
         }
       }
     }
-  }, [manualClick, largeScreen]);
+  }, [manualClick, largeScreen, isInView]);
 
   return (
     <>
       {largeScreen ? (
         <ManageBusinessMobile />
       ) : (
-        <div className='wrapper relative py-48  px-4'>
+        <div ref={ref} className='wrapper relative py-48  px-4'>
           <div className='selling-steps xl:container  mx-auto h-full   '>
             <div className='flex lg:grid-cols-2  item-container items-center justify-center  '>
               <div className='flex-[1.5] xl:flex-1  ml-20 '>

@@ -149,20 +149,20 @@ const TermsNCondition = () => {
   return (
     <Layout>
       <div className=' pb-24 relative '>
-        <header className='bg-primaryColor h-[311.7px] py-[60px]'>
+        <header className='bg-primaryColor  h-[240px] md:h-[311.7px] py-[60px]'>
           <h1 className='font-dmSerif text-3xl md:text-5xl lg:text-[56px] text-white text-center'>
             Privacy Policy
           </h1>
         </header>
         <div className='px-4'>
           <div
-            className='gap-5 rounded-[19px]  xl:p-12  p-4 md:p-8 bg-white  max-w-[950px] w-full mt-[-80px]    mx-auto relative text-[#3B3B3B]'
+            className='gap-5 rounded-[19px]  xl:p-12  px-4 py-8 md:p-8 bg-white  max-w-[950px] w-full mt-[-80px]    mx-auto relative text-[#3B3B3B]'
             style={{
               boxShadow: `2px 10px 28px rgba(75, 0, 129, 0.12)`,
             }}
           >
             <div>
-              <h4 className=''>
+              <h4 className='text-sm md:text-base'>
                 This policy applies to the website www.u2store.com and to the
                 business symbolized therein. The company recognizes the
                 importance of maintaining your privacy. We value your privacy

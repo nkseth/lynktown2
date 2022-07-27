@@ -7,7 +7,7 @@ import step3 from '/public/assets/images/sellingSteps/3.png';
 import step4 from '/public/assets/images/sellingSteps/4.png';
 import Tick from './Tick';
 import { useMediaQuery } from '@mui/material';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, useInView } from 'framer-motion';
 import SellingStepMobile from './SellingStepMobile';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -110,15 +110,20 @@ const SellingSteps = () => {
 
   const [manualClick, setManualClick] = useState(false);
   const [running, setRunning] = useState(false);
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    margin: '-400px 0px',
+    once: true,
+  });
 
   useEffect(() => {
     if (manualClick || largeScreen) return setRunning(false);
     const progressBar = document.querySelector('#progressBar');
-    var id = setInterval(frame, 80);
+    var id = setInterval(frame, 60);
     // let height = 0;
 
     function frame() {
-      if (manualClick || !progressBar) return setRunning(false);
+      if (manualClick || !progressBar || !isInView) return setRunning(false);
       if (height >= 370) {
         setRunning(false);
         clearInterval(id);
@@ -147,14 +152,14 @@ const SellingSteps = () => {
         }
       }
     }
-  }, [manualClick, largeScreen]);
+  }, [manualClick, largeScreen, isInView]);
 
   return (
     <>
       {largeScreen ? (
         <SellingStepMobile />
       ) : (
-        <div className='wrapper relative py-48 px-4'>
+        <div ref={ref} className='wrapper relative py-48 px-4'>
           <div className='selling-steps xl:container  mx-auto h-full   '>
             <div className='grid lg:grid-cols-2 item-container items-center justify-center  justify-items-center  '>
               <div>

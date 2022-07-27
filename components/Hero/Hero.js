@@ -113,7 +113,7 @@ const Hero = () => {
       </div>
       <div className='md:hidden absolute bottom-5 right-5'>
         <Button
-          className=' !bg-white !text-primaryColor !text-[7.36px] !h-[23px] !w-[88.58px] sm:text-sm sm:!h-[40px] !text-sm sm:!w-[150px] !hover:bg-white '
+          className=' !bg-white !text-primaryColor !text-[7.36px] !h-[23px] !w-[88.58px] sm:!text-sm sm:!h-[40px] !text-sm sm:!w-[150px] hover:!bg-white '
           startIcon={
             <svg
               width='20'
