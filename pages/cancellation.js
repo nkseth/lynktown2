@@ -40,7 +40,7 @@ export const cancellations = [
           </li>
           <li>Select the reason and confirm the cancellation</li>
         </ul>
-        Once you cancel the order, we'll send you an acknowledgment of the
+        Once you cancel the order, we&apos;ll send you an acknowledgment of the
         cancellation. Once the brand/designer has processed your order, you are
         not allowed to cancel the order.
       </>
