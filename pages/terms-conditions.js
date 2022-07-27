@@ -114,7 +114,7 @@ const TermsNCondition = () => {
   return (
     <Layout>
       <div className=' pb-24 relative '>
-        <header className='bg-primaryColor h-[311.7px] py-[60px]'>
+        <header className='bg-primaryColor h-[240px] md:h-[311.7px] py-[60px]'>
           <h1 className='font-dmSerif text-3xl md:text-5xl lg:text-[56px] text-white text-center'>
             Terms & Condition
           </h1>
@@ -127,7 +127,7 @@ const TermsNCondition = () => {
             }}
           >
             <div>
-              <h4 className=''>
+              <h4 className=' text-sm md:text-base'>
                 These are the terms and conditions which apply to any
                 competition, prize draw, or promotion that our partners and we
                 may run, whether on our websites or theirs, social media

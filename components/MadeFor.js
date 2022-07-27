@@ -18,7 +18,8 @@ const MadeFor = () => {
           Made For
         </h1>
         <p className='text-[#757575]  text-[24px] md:text-[32px] leading-[46px]  md:leading-[56px] lg:text-[40px] mt-8'>
-          Business owners Professionals Creatives Leaders Artists
+          Business owners <br /> Professionals <br /> Creatives <br /> Leaders{' '}
+          <br /> Artists
         </p>
         <div className='relative'>
           <h4 className='md:text-[32px] text-[24px]  lg:text-[40px] text-primaryColor font-semibold'>

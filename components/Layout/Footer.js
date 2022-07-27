@@ -157,6 +157,14 @@ const Footer = () => {
               Terms and Conditions |
             </span>
           </Link>
+          <Link href='/cancellation'>
+            <span className='underline cursor-pointer'>Cancellation |</span>
+          </Link>
+          <Link href='/return-and-refund'>
+            <span className='underline cursor-pointer'>
+              Return and Refund |
+            </span>
+          </Link>
           <Link href='/privacy-policy'>
             <span className='underline cursor-pointer'>Privacy Policy |</span>
           </Link>
@@ -213,6 +221,16 @@ const Footer = () => {
             <Link href='/terms-conditions'>
               <span className='underline cursor-pointer'>
                 Terms and Conditions
+              </span>
+            </Link>
+            |
+            <Link href='/cancellation'>
+              <span className='underline cursor-pointer'>Cancellation</span>
+            </Link>
+            |
+            <Link href='/return-and-refund'>
+              <span className='underline cursor-pointer'>
+                Return and Refund
               </span>
             </Link>
             |

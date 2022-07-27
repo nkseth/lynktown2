@@ -69,7 +69,7 @@ const ContactUs = () => {
         </header>
         <div className='px-4 mt-[-80px]'>
           <div
-            className='w-full bg-white rounded-[10px]  max-w-[950px] mx-auto py-8 px-2 md:p-8 lg:p-10 xl:p-16'
+            className='w-full bg-white rounded-[10px]  max-w-[950px] mx-auto px-4 py-8 md:p-8 lg:p-10 xl:p-16'
             style={{
               boxShadow: `2px 10px 28px rgba(75, 0, 129, 0.12)`,
             }}
