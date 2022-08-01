@@ -54,7 +54,7 @@ const Faq = () => {
     <div className='text-primaryColor bg-[#EEECE7]'>
       <div className='container mx-auto py-10'>
         <h1 className='text-center text-3xl  md:text-4xl lg:text-[40px] font-medium '>
-          Still have Questions?
+          Have any questions?
         </h1>
         <div className='max-w-5xl mx-auto py-12'>
           {accordionData.map(item => {

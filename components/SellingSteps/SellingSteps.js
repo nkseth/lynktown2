@@ -76,13 +76,13 @@ const SellingSteps = () => {
     const progress = document.querySelector('.progressLine');
     let value = 0;
     if (clicked[2]) {
-      value = 1;
+      value = 0.8;
     }
     if (clicked[3]) {
-      value = 1.9;
+      value = 1.5;
     }
     if (clicked[4]) {
-      value = 3.3;
+      value = 1.9;
     }
     if (progress) progress.style.height = value * 120 + 'px';
 
@@ -91,7 +91,7 @@ const SellingSteps = () => {
 
   const variantsHeight = {
     show: {
-      height: '88px',
+      height: '60px',
     },
     hide: {
       height: '36px',
@@ -112,7 +112,7 @@ const SellingSteps = () => {
   const [running, setRunning] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    margin: '-400px 0px',
+    margin: '-300px 0px',
     once: true,
   });
 
@@ -124,7 +124,7 @@ const SellingSteps = () => {
 
     function frame() {
       if (manualClick || !progressBar || !isInView) return setRunning(false);
-      if (height >= 370) {
+      if (height >= 330) {
         setRunning(false);
         clearInterval(id);
       } else {
@@ -159,7 +159,7 @@ const SellingSteps = () => {
       {largeScreen ? (
         <SellingStepMobile />
       ) : (
-        <div ref={ref} className='wrapper relative py-48 px-4'>
+        <div ref={ref} className='wrapper relative pt-36 pb-18 px-4'>
           <div className='selling-steps xl:container  mx-auto h-full   '>
             <div className='grid lg:grid-cols-2 item-container items-center justify-center  justify-items-center  '>
               <div>
@@ -278,7 +278,7 @@ const SellingSteps = () => {
                   <div
                     className='w-[2px]  h-full bg-[#D9D9D9] absolute left-3 z-[-1]'
                     style={{
-                      height: `calc(100% - 28px)`,
+                      height: `calc(100% - 32px)`,
                     }}
                   ></div>
                   <div

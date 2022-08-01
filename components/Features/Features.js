@@ -46,11 +46,11 @@ const Features = () => {
 
   return (
     <section className='container mx-auto my-24    '>
-      <div className='w-full  py-10  rounded-[38px] md:border-primaryColor md:border  '>
+      <div className='w-full  py-10  rounded-[38px] md:border-primaryColor  md:border-[3px]  '>
         <h1 className='text-2xl md:text-4xl lg:text-[40px] text-primaryColor text-center font-medium'>
           Our intuitive features
         </h1>
-        <header className='py-10 mb-10 mx-auto flex justify-center text-center Swiper--header'>
+        <header className='py-10 mx-auto flex justify-center text-center Swiper--header'>
           <Tabs
             value={value}
             onChange={handleChange}

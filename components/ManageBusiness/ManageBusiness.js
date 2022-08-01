@@ -70,10 +70,10 @@ const ManageBusiness = () => {
     const progress = document.querySelector('#progressBarManage');
     let value = 0;
     if (clicked[2]) {
-      value = 1;
+      value = 0.8;
     }
     if (clicked[3]) {
-      value = 2.4;
+      value = 1.5;
     }
 
     if (progress) progress.style.height = value * 120 + 'px';
@@ -83,7 +83,7 @@ const ManageBusiness = () => {
 
   const variantsHeight = {
     show: {
-      height: '88px',
+      height: '60px',
     },
     hide: {
       height: '36px',
@@ -119,7 +119,7 @@ const ManageBusiness = () => {
     function frame() {
       if (manualClick || !progressBar) return;
 
-      if (height >= 265) {
+      if (height >= 235) {
         clearInterval(id);
         setRunning(false);
       } else {
@@ -147,7 +147,7 @@ const ManageBusiness = () => {
       {largeScreen ? (
         <ManageBusinessMobile />
       ) : (
-        <div ref={ref} className='wrapper relative py-48  px-4'>
+        <div ref={ref} className='wrapper relative pt-36  pb-28 px-4'>
           <div className='selling-steps xl:container  mx-auto h-full   '>
             <div className='flex lg:grid-cols-2  item-container items-center justify-center  '>
               <div className='flex-[1.5] xl:flex-1  ml-20 '>

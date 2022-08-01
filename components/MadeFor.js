@@ -7,11 +7,23 @@ import image5 from '/public/assets/images/madefor/5.png';
 import image6 from '/public/assets/images/madefor/6.png';
 const MadeFor = () => {
   return (
-    <section className='min-h-[70vh] sm:h-[80vh] md:h-full md:py-40 container mx-auto gap-10 flex flex-col md:flex-row md:justify-center items-center pb-44 pt-10 sm:py-20 md:pt-0'>
+    <section className='min-h-[70vh] sm:h-[80vh] md:h-full md:py-40 container mx-auto gap-10 flex flex-col md:flex-row md:justify-center items-center pb-56 pt-10 sm:py-20 md:pt-0'>
       <div className='relative flex-1 w-full h-full md:h-[794px] hidden md:block'>
-        <img src={image1.src} alt='' className='absolute right-[5%] top-44' />
-        <img src={image2.src} alt='' className='absolute left-0  top-64 z-10' />
-        <img src={image3.src} alt='' className='absolute right-[5%] bottom-0' />
+        <img
+          src={image1.src}
+          alt=''
+          className='absolute rounded-[7.78px] right-[5%] top-44'
+        />
+        <img
+          src={image2.src}
+          alt=''
+          className='absolute rounded-[7.78px] left-0  top-64 z-10'
+        />
+        <img
+          src={image3.src}
+          alt=''
+          className='absolute rounded-[7.78px] right-[5%] bottom-0'
+        />
       </div>
       <div className='justify-center flex-1 w-full text-center'>
         <h1 className='text-[24px] md:text-[32px] lg:text-[40px] text-primaryColor underline font-medium'>
@@ -21,7 +33,7 @@ const MadeFor = () => {
           Business owners <br /> Professionals <br /> Creatives <br /> Leaders{' '}
           <br /> Artists
         </p>
-        <div className='relative'>
+        <div className='relative mt-5 md:mt-10'>
           <h4 className='md:text-[32px] text-[24px]  lg:text-[40px] text-primaryColor font-semibold'>
             for you
           </h4>
@@ -58,21 +70,27 @@ const MadeFor = () => {
           </svg>
         </div>
       </div>
-      <div className='relative w-full  md:w-[80%]  pb-36 lg:pb-0  flex-1 h-[450px] sm:h-[500px] md:h-[794px]'>
+      <div className='relative w-full  md:w-[80%] mt-5 pb-36 lg:pb-0  flex-1 h-[450px] sm:h-[500px] md:h-[794px]'>
+        <img
+          src={image3.src}
+          alt=''
+          className='block md:hidden absolute rounded-xl h-[156.76px] w-[157.38px] sm:w-[206.76px] sm:h-[250px] md:w-auto md:h-auto top-10 left-[2%] sm:left-[5%] sm:top-[-50px] md:left-[20%] md:top-40 object-cover'
+        />
+
         <img
           src={image4.src}
           alt=''
-          className='absolute h-[156.76px] w-[157.38px] sm:w-[206.76px] sm:h-[250px] md:w-auto md:h-auto top-10 left-[2%] sm:left-[5%] sm:top-[-50px] md:left-[20%] md:top-40 object-cover'
+          className='hidden md:block absolute rounded-[7.78px] h-[156.76px] w-[157.38px] sm:w-[206.76px] sm:h-[250px] md:w-auto md:h-auto top-10 left-[2%] sm:left-[5%] sm:top-[-50px] md:left-[20%] md:top-40 object-cover'
         />
         <img
           src={image5.src}
           alt=''
-          className='absolute h-[100.08px] w-[100.32px]  sm:w-[150px] sm:h-[150px] md:w-auto md:h-auto   md:right-[5%] top-12 sm:right-0 sm:top-[-50px]  right-[5%]  md:top-72 z-10 object-cover'
+          className='absolute rounded-[12.78px] h-[100.08px] w-[100.32px]  sm:w-[150px] sm:h-[150px] md:w-auto md:h-auto   md:right-[5%] top-12 sm:right-0 sm:top-[-50px]  right-[5%]  md:top-72 z-10 object-cover'
         />
         <img
           src={image6.src}
           alt=''
-          className='absolute   h-[154.63px] w-[153.45px]  sm:w-[230px] sm:h-[250px] md:w-auto md:h-auto     bottom-[-150px]  z-10 sm:bottom-0  left-[40%] md:left-[5%] md:bottom-0 object-cover'
+          className='absolute rounded-[15.78px]   h-[154.63px] w-[153.45px]  sm:w-[230px] sm:h-[250px] md:w-auto md:h-auto     bottom-[-150px]  z-10 sm:bottom-0  left-[40%] md:left-[5%] md:bottom-0 object-cover'
         />
       </div>
     </section>

@@ -64,7 +64,7 @@ const SpecialCollection = () => {
   const iPade = useMediaQuery('(max-width:1000px)');
   const tab = useMediaQuery('(max-width:890px)');
   const mobile = useMediaQuery('(max-width:479px)');
-  const large = useMediaQuery('(max-width:1330px)');
+  const large = useMediaQuery('(max-width:1430px)');
   return (
     <div className='py-20 relative overflow-hidden '>
       <div className='container mx-auto'>

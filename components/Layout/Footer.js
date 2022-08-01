@@ -150,7 +150,7 @@ const Footer = () => {
             <img src={apple.src} alt='' />
           </button>
         </div>
-        <div className='md:text-base my-6   flex-col flex sm:hidden text-white text-sm   mx-auto gap-y-4'>
+        <div className='md:text-base my-6   flex-col flex xl:hidden text-white text-sm   mx-auto gap-y-4'>
           <h3>All Rights Reserved </h3>
           <Link href='/terms-conditions'>
             <span className='underline cursor-pointer'>
@@ -214,9 +214,9 @@ const Footer = () => {
         <hr />
         <div className='flex flex-col lg:flex-row items-center text-white py-5  justify-between'>
           <div>
-            <h3>Copyright © 2022 Company Name</h3>
+            <h3>Copyright © 2022 Lynk Town</h3>
           </div>
-          <div className='text-sm md:text-base hidden sm:flex gap-2 items-center'>
+          <div className='text-sm md:text-base hidden xl:flex gap-2 items-center'>
             <h3>All Rights Reserved |</h3>{' '}
             <Link href='/terms-conditions'>
               <span className='underline cursor-pointer'>
