@@ -15,12 +15,12 @@ const Layout = ({ children }) => {
   // },[])
   return (
     <>
+      <Script
+        id='googletagmanager-js'
+        src='https://www.googletagmanager.com/gtag/js?id=G-TTP5FCW4FD'
+      />
       <Head>
         <title>U2Lynk Town</title>
-        <Script
-          id='googletagmanager-js'
-          src='https://www.googletagmanager.com/gtag/js?id=G-TTP5FCW4FD'
-        />
 
         <meta
           name='google-site-verification'
