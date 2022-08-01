@@ -8,7 +8,6 @@ import {
   DotGroup,
 } from 'pure-react-carousel';
 import { Button, IconButton, useMediaQuery } from '@mui/material';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Items from './items';
 import img1 from '/public/assets/images/collections/1.jpg';
 import img2 from '/public/assets/images/collections/2.jpg';
