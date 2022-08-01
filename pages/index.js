@@ -7,6 +7,7 @@ import Layout from '../components/Layout/Layout';
 import MadeFor from '../components/MadeFor';
 import ManageBusiness from '../components/ManageBusiness/ManageBusiness';
 import SellingSteps from '../components/SellingSteps/SellingSteps';
+import SpecialCollection from '../components/SpecialCollection/SpecialCollection';
 import Testimonial from '../components/Testimonial/Testimonial';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <ManageBusiness />
       <Community />
       <Features />
+      <SpecialCollection />
       <Testimonial />
       <MadeFor />
       <Faq />

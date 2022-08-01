@@ -191,3 +191,18 @@ button {
 .support--pages__accordion--styles .MuiAccordion-root.Mui-expanded {
   margin: 0 !important;
 }
+.carousel__slider-tray {
+  align-items: center !important;
+}
+
+.carousel__inner-slide {
+  /* width: 260px !important; */
+  /* display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important; */
+}
+
+.itemsContainer:hover .itemText {
+  transform: translateX(10px);
+}
