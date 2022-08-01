@@ -111,28 +111,24 @@ const Hero = () => {
           />
         </svg>
       </div>
-      <div className='md:hidden absolute bottom-5 right-5'>
-        <Button
-          className=' !bg-white !text-primaryColor !text-[7.36px] !h-[23px] !w-[88.58px] sm:!text-sm sm:!h-[40px] !text-sm sm:!w-[150px] hover:!bg-white '
-          startIcon={
-            <svg
-              width='20'
-              height='20'
-              viewBox='0 0 30 30'
-              className='w-[13.8px] h-[13.8px] sm:w-[20px] sm:h-[20px]'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <circle cx='15' cy='15' r='15' fill='#6A5B40' />
-              <path
-                d='M20.4238 14.134C21.0905 14.5189 21.0905 15.4811 20.4238 15.866L13.0392 20.1295C12.3725 20.5144 11.5392 20.0333 11.5392 19.2635L11.5392 10.7365C11.5392 9.96667 12.3725 9.48555 13.0392 9.87045L20.4238 14.134Z'
-                fill='white'
-              />
-            </svg>
-          }
-        >
+      <div className='md:hidden absolute bottom-5 right-[2%]'>
+        <button className='bg-white text-primaryColor flex font-medium items-center gap-1 text-[8px] sm:text-[11px]  p-1 sm:p-2 rounded-[5.52px]'>
+          <svg
+            width='20'
+            height='20'
+            viewBox='0 0 30 30'
+            className='w-[13.8px] h-[13.8px] sm:w-[20px] sm:h-[20px]'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <circle cx='15' cy='15' r='15' fill='#6A5B40' />
+            <path
+              d='M20.4238 14.134C21.0905 14.5189 21.0905 15.4811 20.4238 15.866L13.0392 20.1295C12.3725 20.5144 11.5392 20.0333 11.5392 19.2635L11.5392 10.7365C11.5392 9.96667 12.3725 9.48555 13.0392 9.87045L20.4238 14.134Z'
+              fill='white'
+            />
+          </svg>{' '}
           Watch Demo
-        </Button>
+        </button>
       </div>
     </section>
   );

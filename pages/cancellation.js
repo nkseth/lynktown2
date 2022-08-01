@@ -125,7 +125,7 @@ const Cancellation = () => {
         </header>
         <div className='px-4'>
           <div
-            className='gap-5 rounded-[19px]  xl:p-12  px-4 py-8 py-8 md:p-8 bg-white  max-w-[950px] w-full mt-[-80px]    mx-auto relative text-[#3B3B3B]'
+            className='gap-5 rounded-[19px]  xl:p-12  px-4 py-8 py-8 md:p-8 bg-white  max-w-[950px] w-full mt-[-120px]    mx-auto relative text-[#3B3B3B]'
             style={{
               boxShadow: `2px 10px 28px rgba(75, 0, 129, 0.12)`,
             }}

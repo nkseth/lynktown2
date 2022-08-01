@@ -5,14 +5,14 @@ const AboutUs = () => {
   return (
     <Layout>
       <div className=' pb-24 relative '>
-        <header className='bg-primaryColor h-[311.7px] py-[60px]'>
+        <header className='bg-primaryColor h-[240px] md:h-[311.7px] py-[60px]'>
           <h1 className='font-dmSerif text-3xl md:text-5xl lg:text-[56px] text-white text-center'>
             About Us
           </h1>
         </header>
         <div className='px-4'>
           <div
-            className=' flex items-center flex-col md:flex-row  gap-5 rounded-[19px]  p-4 md:p-8 bg-white  max-w-[950px] w-full mt-[-80px]    mx-auto relative'
+            className=' flex items-center flex-col md:flex-row  gap-5 rounded-[19px]  p-4 md:p-8 bg-white  max-w-[950px] w-full mt-[-120px]    mx-auto relative'
             style={{
               boxShadow: `2px 10px 28px rgba(75, 0, 129, 0.12)`,
             }}

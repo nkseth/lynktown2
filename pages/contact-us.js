@@ -62,12 +62,12 @@ const ContactUs = () => {
     <Layout>
       {loading && <Loading />}
       <div className=' pb-24 relative '>
-        <header className='bg-primaryColor h-[311.7px] py-[60px]'>
+        <header className='bg-primaryColor h-[240px] md:h-[311.7px] py-[60px]'>
           <h1 className='font-dmSerif text-3xl md:text-5xl lg:text-[56px] text-white text-center'>
             Contact Us
           </h1>
         </header>
-        <div className='px-4 mt-[-80px]'>
+        <div className='px-4 mt-[-120px]'>
           <div
             className='w-full bg-white rounded-[10px]  max-w-[950px] mx-auto px-4 py-8 md:p-8 lg:p-10 xl:p-16'
             style={{
