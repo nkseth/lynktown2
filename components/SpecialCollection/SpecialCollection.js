@@ -8,7 +8,7 @@ import {
   DotGroup,
 } from 'pure-react-carousel';
 import { Button, IconButton, useMediaQuery } from '@mui/material';
-import Items from './items';
+import Items from './Items';
 import img1 from '/public/assets/images/collections/1.jpg';
 import img2 from '/public/assets/images/collections/2.jpg';
 import img3 from '/public/assets/images/collections/3.jpg';
